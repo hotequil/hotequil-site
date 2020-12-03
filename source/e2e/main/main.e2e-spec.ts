@@ -1,11 +1,11 @@
-import { AppPage } from './app.po';
+import { MainPage } from './main.po';
 import { browser, logging } from 'protractor';
 
 describe('workspace-project App', () => {
-  let page: AppPage;
+  let page: MainPage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new MainPage();
   });
 
   it('should display welcome message', async () => {
