@@ -11,24 +11,23 @@
         }
       },
       "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
+      "sourceRoot": "source",
+      "prefix": "hotequil",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/hotequil",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "index": "source/pages/index.html",
+            "main": "source/configurations/main.ts",
+            "polyfills": "source/configurations/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "source/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "source/style-sheets/index.scss"
             ],
             "scripts": []
           },
@@ -36,8 +35,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "source/environments/environment.development.ts",
+                  "with": "source/environments/environment.production.ts"
                 }
               ],
               "optimization": true,
@@ -82,16 +81,15 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
+            "main": "source/configurations/test.ts",
+            "polyfills": "source/configurations/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "source/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "source/style-sheets/index.scss"
             ],
             "scripts": []
           }
@@ -102,7 +100,7 @@
             "tsConfig": [
               "tsconfig.app.json",
               "tsconfig.spec.json",
-              "e2e/tsconfig.json"
+              "source/e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
