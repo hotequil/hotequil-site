@@ -1,0 +1,18 @@
+<button *ngIf="!location; else link"
+        [type]="type"
+        class="button"
+        [ngClass]="filled ? 'button--filled' : ''"
+        (click)="click()"
+        [attr.aria-label]="ariaLabel">
+    {{ text }}
+</button>
+
+<ng-template #link>
+    <a role="button"
+       class="button button--link"
+       [ngClass]="filled ? 'button--filled' : ''"
+       [href]="location"
+       [target]="target">
+        {{ text }}
+    </a>
+</ng-template>

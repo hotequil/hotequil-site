@@ -1,0 +1,11 @@
+<section class="card">
+    <img class="card__image" [src]="image.source" [alt]="image.alternative">
+    <div class="card__container">
+        <h2 class="card__name">{{ name }}</h2>
+        <ul class="card__list">
+            <li class="card__list-item" *ngFor="let link of links">
+                <a class="card__link" [href]="link.location" [target]="link.target">{{ link.text }}</a>
+            </li>
+        </ul>
+    </div>
+</section>

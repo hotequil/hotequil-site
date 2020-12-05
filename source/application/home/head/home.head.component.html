@@ -1,0 +1,16 @@
+<header class="home">
+    <hotequil-home-card class="home__card" [image]="image" [name]="name" [links]="links"></hotequil-home-card>
+    <section class="home__main">
+        <h1 class="home__title">{{ title }}</h1>
+        <ul class="home__list">
+            <li *ngFor="let button of buttons" class="home__list-item">
+                <hotequil-button [text]="button.text"
+                                 [filled]="button.filled"
+                                 [location]="button.location"
+                                 [target]="button.target">
+                    {{ button.text }}
+                </hotequil-button>
+            </li>
+        </ul>
+    </section>
+</header>
