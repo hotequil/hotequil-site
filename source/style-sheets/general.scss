@@ -1,7 +1,10 @@
 @import "fonts";
 @import "variables";
+@import "normalize";
 
 html, body{
     font-family: 'Menlo Regular', monospace;
-    font-weight:normal
+    font-weight: normal;
+    color: $font-color;
+    background-color: $background-color;
 }

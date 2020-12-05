@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { RoutesModule } from '../routes/routes.module';
 import { RootComponent } from './root.component';
+import { HomeModule } from '../home/home.module';
+import { FooterModule } from '../footer/footer.module';
 
 @NgModule({
     declarations: [
@@ -10,7 +12,9 @@ import { RootComponent } from './root.component';
     ],
     imports: [
         BrowserModule,
-        RoutesModule
+        RoutesModule,
+        HomeModule,
+        FooterModule
     ],
     providers: [],
     bootstrap: [
