@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
     styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent{
-    text = 'Desenvolvido por João Paulo Hotequil e desenhado por João Paulo Hotequil e Lenóra Vitorino';
+    text = 'Com amor, desenvolvido por João Paulo Hotequil e desenhado por João Paulo Hotequil e Lenóra Maria Vitorino';
 }

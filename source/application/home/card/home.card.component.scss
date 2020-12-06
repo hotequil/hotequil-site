@@ -3,52 +3,64 @@
 @import "source/style-sheets/placeholders";
 
 .card{
-    $space: .75rem;
+    $space: .375rem;
+    $space-links: $space * 1.5;
+    $space-container: $space * 2;
 
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
 
     .card__container{
         display: flex;
         flex-direction: column;
-        margin-right: $space;
+        margin-left: $space-container;
 
         .card__name{
             font-size: 1.5rem;
-            text-align: right;
+            letter-spacing: 1px;
+            font-weight: 600;
+            text-align: left;
             margin: 0 0 $space 0;
+            font-family: 'Berkshire Swash Regular', fantasy, serif;
 
             @extend %line-height-default;
         }
 
         .card__list{
             display: flex;
-            flex-direction: row-reverse;
+            flex-direction: row;
             flex-wrap: wrap;
             list-style: none;
-            text-align: right;
+            text-align: left;
             margin: 0;
             padding: 0;
 
             .card__list-item{
                 &:not(:last-child){
-                    margin-left: $space;
+                    margin-right: $space-links;
                 }
 
                 .card__link{
                     text-decoration: none;
-                    font-weight: 600;
-                    color: $font-color;
+                    font-weight: 400;
+                    color: $grey-color;
                     transition: color $time-transition, box-shadow $time-transition;
+                    font-size: .85rem;
 
                     @extend %line-height-default;
 
                     &:hover, &:focus{
-                        box-shadow: inset 0 -0.5rem $primary-color;
+                        $box-shadow: inset 0 -0.05rem;
+
+                        box-shadow: $box-shadow $primary-color;
+                        color: $primary-color;
 
                         &:active{
-                            box-shadow: inset 0 -1.25rem $primary-color;
+                            $active-color: darken($primary-color, 8%);
+
+                            box-shadow: $box-shadow $active-color;
+                            color: $active-color;
                         }
                     }
                 }
@@ -56,24 +68,51 @@
         }
     }
 
-    .card__image{
-        @include fix-size(65px, 65px);
+    .card__container-image{
+        .card__image{
+            @include fix-size(75px, 75px);
 
-        border-radius: $border-radius;
-        filter: drop-shadow(1px 1px 1px $background-color);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            opacity: 1;
+            transition: opacity $time-transition, border-radius $time-transition;
+            border-radius: $border-radius;
+            z-index: 1;
+
+            &.card__image--second{
+                z-index: 2;
+
+                &:hover, &:focus, &:active{
+                    opacity: 0;
+                    z-index: 1;
+                };
+            }
+
+            &.card__image--first:hover, &.card__image--first:focus, &.card__image--first:active{
+                border-radius: 4px;
+                z-index: 2;
+            }
+        }
+
+        @include fix-size(75px, 75px);
+
+        position: relative;
     }
 
     @media(max-width: $mobile-width){
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
 
-        .card__image{
-            margin-bottom: $space;
+        .card__container-image{
+            margin-bottom: $space-container;
         }
 
         .card__container{
-            margin-right: 0;
+            margin-left: 0;
 
             .card__list{
                 .card__list-item{

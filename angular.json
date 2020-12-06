@@ -27,7 +27,7 @@
               "source/assets"
             ],
             "styles": [
-              "source/style-sheets/general.scss"
+              "source/style-sheets/main.scss"
             ],
             "scripts": []
           },
@@ -89,7 +89,7 @@
               "source/assets"
             ],
             "styles": [
-              "source/style-sheets/general.scss"
+              "source/style-sheets/main.scss"
             ],
             "scripts": []
           }

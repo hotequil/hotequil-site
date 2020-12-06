@@ -1,4 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+import { Observable, of } from 'rxjs';
 
 import { LinkInterface } from '../../link/link.interface';
 import { ImageInterface } from '../../image/image.interface';
@@ -8,8 +10,15 @@ import { ImageInterface } from '../../image/image.interface';
     templateUrl: './home.card.component.html',
     styleUrls: ['./home.card.component.scss']
 })
-export class HomeCardComponent{
+export class HomeCardComponent implements OnInit{
     @Input() name: string;
     @Input() image: ImageInterface;
     @Input() links: LinkInterface[];
+
+    logoImageObservable: Observable<string> = of('./assets/images/logo.svg');
+    showLogoImage = false;
+
+    ngOnInit(): void{
+        setTimeout(() => this.showLogoImage = true, 1000);
+    }
 }

@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { HomeHeadComponent } from './head/home.head.component';
 import { HomeCardComponent } from './card/home.card.component';
-import { ButtonModule } from '../button/button.module';
 
 @NgModule({
     declarations: [
@@ -13,8 +12,7 @@ import { ButtonModule } from '../button/button.module';
         HomeCardComponent
     ],
     imports: [
-        CommonModule,
-        ButtonModule
+        CommonModule
     ]
 })
 export class HomeModule { }

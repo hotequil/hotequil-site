@@ -9,18 +9,27 @@ import { LinkInterface } from '../../link/link.interface';
     styleUrls: ['./home.head.component.scss']
 })
 export class HomeHeadComponent{
-    name = 'Hotequil';
-    title = 'Hello world';
+    name = 'João Paulo Hotequil';
     image: ImageInterface = { source: './assets/images/hotequil.png', alternative: 'Foto de João Paulo Hotequil' };
     links: LinkInterface[] = [
         {
-            text: 'GitHub',
-            location: 'https://github.com/hotequil',
+            text: 'Curriculum',
+            location: './assets/documents/curriculum.odt',
             target: '_blank'
+        },
+        {
+            text: 'Email',
+            location: 'mailto:hotequil@protonmail.com',
+            target: '_self',
         },
         {
             text: 'LinkedIn',
             location: 'https://www.linkedin.com/in/jo%C3%A3o-paulo-hotequil-3044b4173',
+            target: '_blank'
+        },
+        {
+            text: 'GitHub',
+            location: 'https://github.com/hotequil',
             target: '_blank'
         },
         {
@@ -35,16 +44,6 @@ export class HomeHeadComponent{
         },
     ];
     buttons: LinkInterface[] = [
-        {
-            text: 'Baixar currículo',
-            location: './assets/documents/curriculum.odt',
-            target: '_blank'
-        },
-        {
-            text: 'Me envie um e-mail',
-            location: 'mailto:hotequil@protonmail.com',
-            target: '_self',
-            filled: true
-        }
+
     ];
 }

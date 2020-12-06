@@ -1,4 +1,16 @@
+@import "source/style-sheets/variables";
+
 .root{
     position: relative;
-    min-height: 100vh;
+
+    .root__subject{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: -1;
+        color: $white-color;
+        opacity: 0;
+    }
 }

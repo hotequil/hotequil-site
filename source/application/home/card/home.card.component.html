@@ -1,5 +1,8 @@
 <section class="card">
-    <img class="card__image" [src]="image.source" [alt]="image.alternative">
+    <div class="card__container-image">
+        <img class="card__image card__image--second" [src]="image.source" [alt]="image.alternative">
+        <img *ngIf="showLogoImage" aria-hidden="true" class="card__image card__image--first" [src]="logoImageObservable | async" alt="Logo do João Paulo Hotequil">
+    </div>
     <div class="card__container">
         <h2 class="card__name">{{ name }}</h2>
         <ul class="card__list">

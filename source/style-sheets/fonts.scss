@@ -1,6 +1,20 @@
 @font-face {
+    font-family: 'Berkshire Swash Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Berkshire Swash Regular'), url('../assets/fonts/berkshire-swash-regular.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'Menlo Regular';
     font-style: normal;
     font-weight: normal;
     src: local('Menlo Regular'), url('../assets/fonts/menlo-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Regular'), url('../assets/fonts/roboto-regular.ttf') format('truetype');
 }

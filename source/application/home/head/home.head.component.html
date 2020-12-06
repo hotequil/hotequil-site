@@ -1,16 +1,8 @@
 <header class="home">
     <hotequil-home-card class="home__card" [image]="image" [name]="name" [links]="links"></hotequil-home-card>
     <section class="home__main">
-        <h1 class="home__title">{{ title }}</h1>
-        <ul class="home__list">
-            <li *ngFor="let button of buttons" class="home__list-item">
-                <hotequil-button [text]="button.text"
-                                 [filled]="button.filled"
-                                 [location]="button.location"
-                                 [target]="button.target">
-                    {{ button.text }}
-                </hotequil-button>
-            </li>
-        </ul>
+        <h1 class="home__title">
+            We are together in this magical world of programming, <strong class="home__word home__word--emphasis">creating</strong>, <strong class="home__word home__word--emphasis">working hard</strong> and <strong class="home__word home__word--emphasis">transforming other people's lives</strong>, through <strong class="home__word home__word--emphasis">practical</strong>, <strong class="home__word home__word--emphasis">objective</strong> and <strong class="home__word home__word--emphasis">quick solutions</strong>.
+        </h1>
     </section>
 </header>
