@@ -12,12 +12,14 @@
 
     .projects__title{
         font-size: 1.5rem;
-        box-shadow: $box-shadow $black-color;
         width: fit-content;
-        font-weight: 400;
+        font-weight: 600;
+        letter-spacing: 1px;
         display: inline;
         color: $black-color;
         margin: 0 0 ($margin / 2) 0;
+
+        @include box-shadow-bottom( -0.2rem, $black-color);
     }
 
     .projects__list{

@@ -40,12 +40,12 @@ noscript{
 }
 
 *{
-    @extend %no-selection;
+    $selection-color: lighten($primary-color, 12%);
 
     &::selection{
-        color: $black-color;
-        background-color: $primary-color;
+        color: $white-color;
+        background-color: $selection-color;
     }
 
-    outline-color: lighten($primary-color, 12%);
+    outline-color: $selection-color;
 }
