@@ -11,7 +11,7 @@ export class HomeProjectsComponent{
     projects: HomeProjectsInterface[] = [
         {
             title: 'Artifical Developers',
-            description: 'Artifical Developers is a simple project, which is responsive, accessible and uses the BEM methodology for CSS.',
+            description: 'Artifical Developers is a simple project, it is responsive, accessible and uses the BEM methodology for CSS.',
             location: 'https://artificaldevelopers.netlify.app',
             image: {
                 source: './assets/images/artifical-developers.png',
@@ -48,7 +48,7 @@ export class HomeProjectsComponent{
         },
         {
             title: 'Eric Cartman',
-            description: 'This is an Eric Cartman drawing made with HTML and CSS.',
+            description: 'This is the Eric Cartman drawed with HTML and CSS.',
             location: 'https://eric-cartman.netlify.app',
             image: {
                 source: './assets/images/eric-cartman.png',
