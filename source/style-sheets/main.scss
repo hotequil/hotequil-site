@@ -40,6 +40,8 @@ noscript{
 }
 
 *{
+    @extend %no-selection;
+    
     $selection-color: lighten($primary-color, 12%);
 
     &::selection{
