@@ -1,3 +1,5 @@
+@import "source/style-sheets/mixins";
+
 .footer{
     display: flex;
     align-items: center;
@@ -9,5 +11,10 @@
         margin: 2rem 0;
         line-height: 1.5;
         font-size: .85rem;
+
+        .footer__link{
+            color: inherit;
+            @include link();
+        }
     }
 }

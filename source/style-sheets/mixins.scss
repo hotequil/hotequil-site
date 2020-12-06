@@ -1,3 +1,6 @@
+@import "variables";
+@import "placeholders";
+
 @mixin fix-size($width, $height){
     height: $height;
     min-height: $height;
@@ -5,4 +8,25 @@
     width: $width;
     min-width: $width;
     max-width: $width;
+}
+
+@mixin link(){
+    @extend %line-height-default;
+
+    transition: color $time-transition, box-shadow $time-transition;
+    text-decoration: none;
+
+    &:hover, &:focus{
+        $box-shadow: inset 0 -0.05rem;
+
+        box-shadow: $box-shadow $primary-color;
+        color: $primary-color;
+
+        &:active{
+            $active-color: darken($primary-color, 8%);
+
+            box-shadow: $box-shadow $active-color;
+            color: $active-color;
+        }
+    }
 }
