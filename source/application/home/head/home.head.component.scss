@@ -26,6 +26,10 @@
             word-break: break-word;
             line-height: 1.25;
 
+            @media(max-width: $mobile-width){
+                font-size: 1.75rem;
+            }
+
             .home__word{
                 &.home__word--emphasis{
                     font-style: oblique;

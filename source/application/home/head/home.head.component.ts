@@ -10,7 +10,7 @@ import { LinkInterface } from '../../link/link.interface';
 })
 export class HomeHeadComponent{
     name = 'João Paulo Hotequil';
-    image: ImageInterface = { source: './assets/images/logo.svg', alternative: 'Logo de João Paulo Hotequil' };
+    image: ImageInterface = { source: './assets/images/logo.svg', alternative: 'João Paulo Hotequil\'s image' };
     links: LinkInterface[] = [
         {
             text: 'Curriculum',
