@@ -61,22 +61,22 @@
             bottom: 0;
             right: 0;
             left: 0;
-            opacity: 0;
+            opacity: 1;
             transition: opacity $time-transition, border-radius $time-transition;
-            border-radius: $border-radius;
             z-index: 1;
 
             &.card__image--second{
-                opacity: 1;
+                border-radius: 4px;
+                z-index: 2;
 
                 &:hover, &:focus, &:active{
                     opacity: 0;
+                    border-radius: $border-radius;
                 };
             }
 
-            &.card__image--first:hover, &.card__image--first:focus, &.card__image--first:active{
-                border-radius: 4px;
-                opacity: 1;
+            &.card__image--first{
+                border-radius: $border-radius;
             }
         }
 

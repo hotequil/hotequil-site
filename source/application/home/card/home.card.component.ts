@@ -15,7 +15,7 @@ export class HomeCardComponent implements OnInit{
     @Input() image: ImageInterface;
     @Input() links: LinkInterface[];
 
-    logoImageObservable: Observable<string> = of('./assets/images/logo.svg');
+    logoImageObservable: Observable<string> = of('./assets/images/hotequil.png');
     showLogoImage = false;
 
     ngOnInit(): void{
