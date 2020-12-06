@@ -6,9 +6,10 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./root.component.scss']
 })
 export class RootComponent implements OnInit{
-    subject = 'A verdadeira utopia está aí, vários prédios caindo aos pedaços, educação centralizada, documentos carimbados, falsos contratos, pagamentos involuntários, papeis positivados e apelo ao fino, até pelo que eu sei, você não nasceu com isso.';
+    subject = 'The real utopia is there, several buildings falling apart, centralized education, stamped documents, false contracts, involuntary payments, positive papers and appeal to the fine, even as far as I know, you were not born with it.';
+    word = 'Freedom.';
 
     ngOnInit(): void{
-        console.log(this.subject);
+        console.log(this.word);
     }
 }
