@@ -46,4 +46,6 @@ noscript{
         color: $black-color;
         background-color: $primary-color;
     }
+
+    outline-color: lighten($primary-color, 12%);
 }
