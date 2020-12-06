@@ -61,6 +61,7 @@
                     margin: 0 0 $small-margin 0;
                     font-weight: 600;
                     font-size: 1.375rem;
+                    transform: skewX(-8deg);
 
                     @extend %line-height-default;
                 }
