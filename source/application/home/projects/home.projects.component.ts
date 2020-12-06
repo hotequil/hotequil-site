@@ -19,21 +19,21 @@ export class HomeProjectsComponent{
             }
         },
         {
-            title: 'HClima',
-            description: 'HClima is a project that is used to check the weather of the day and week, it uses geolocation and the HG Weather API.',
-            location: 'https://hclima.netlify.app',
-            image: {
-                source: './assets/images/hclima.png',
-                alternative: 'HClima\'s image',
-            }
-        },
-        {
             title: 'Diário HZ',
             description: 'Diário HZ is a blog that has publications related to freedom, anarchism, thoughts and indignations.',
             location: 'https://diariohz.com.br',
             image: {
                 source: './assets/images/diario-hz.png',
                 alternative: 'Diário HZ\'s image',
+            }
+        },
+        {
+            title: 'HClima',
+            description: 'HClima is a project that is used to check the weather of the day and week, it uses geolocation and the HG Weather API.',
+            location: 'https://hclima.netlify.app',
+            image: {
+                source: './assets/images/hclima.png',
+                alternative: 'HClima\'s image',
             }
         },
         {
