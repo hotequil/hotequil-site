@@ -40,9 +40,7 @@ noscript{
 }
 
 *{
-    &:not(img):not(a){
-        @extend %no-selection;
-    }
+    @extend %no-selection;
 
     $selection-color: lighten($primary-color, 12%);
 
