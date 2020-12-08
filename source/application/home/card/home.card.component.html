@@ -4,7 +4,7 @@
         <img *ngIf="showLogoImage" aria-hidden="true" class="card__image card__image--second" [src]="logoImageObservable | async" alt="João Paulo Hotequil's image">
     </div>
     <div class="card__container">
-        <h2 class="card__name">{{ name }}</h2>
+        <h1 class="card__name">{{ name }}</h1>
         <ul class="card__list">
             <li class="card__list-item" *ngFor="let link of links">
                 <a rel="noreferrer" class="card__link" [href]="link.location" [target]="link.target">{{ link.text }}</a>
