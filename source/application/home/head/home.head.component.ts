@@ -14,7 +14,7 @@ export class HomeHeadComponent{
     links: LinkInterface[] = [
         {
             text: 'Curriculum',
-            location: './assets/documents/curriculum.odt',
+            location: './assets/documents/curriculum.pdf',
             target: '_blank'
         },
         {
