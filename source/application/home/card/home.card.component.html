@@ -1,7 +1,7 @@
 <section class="card">
     <div class="card__container-image">
-        <img class="card__image card__image--second" [src]="image.source" [alt]="image.alternative">
-        <img *ngIf="showLogoImage" aria-hidden="true" class="card__image card__image--first" [src]="logoImageObservable | async" alt="João Paulo Hotequil's image">
+        <img class="card__image card__image--first" [src]="image.source" [alt]="image.alternative">
+        <img *ngIf="showLogoImage" aria-hidden="true" class="card__image card__image--second" [src]="logoImageObservable | async" alt="João Paulo Hotequil's image">
     </div>
     <div class="card__container">
         <h2 class="card__name">{{ name }}</h2>
