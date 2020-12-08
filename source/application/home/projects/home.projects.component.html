@@ -10,7 +10,8 @@
             <div class="projects__container">
                 <h4 class="projects__title-item">{{ project.title }}</h4>
                 <p class="projects__description">{{ project.description }}</p>
-                <a class="projects__link"
+                <a rel="noreferrer"
+                   class="projects__link"
                    [ngClass]="project.withoutName ? 'projects__link--without-name' : ''"
                    [href]="project.location"
                    target="_blank">
