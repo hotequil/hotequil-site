@@ -11,7 +11,11 @@ export class HomeProjectsComponent{
     projects: HomeProjectsInterface[] = [
         {
             title: 'Artifical Developers',
-            description: 'Artifical Developers is a simple project, it is responsive, accessible and uses the BEM methodology for CSS.',
+            description: `
+                Artifical Developers is a simple project, it is
+                responsive, accessible
+                and uses the BEM methodology for CSS.
+            `,
             location: 'https://artificaldevelopers.netlify.app',
             image: {
                 source: './assets/images/artifical-developers.webp',
@@ -20,7 +24,10 @@ export class HomeProjectsComponent{
         },
         {
             title: 'Diário HZ',
-            description: 'Diário HZ is a blog that has publications related to freedom, anarchism, thoughts and indignations.',
+            description: `
+                Diário HZ is a blog that has publications related to freedom,
+                anarchism, thoughts and indignations.
+            `,
             location: 'https://diariohz.com.br',
             image: {
                 source: './assets/images/diario-hz.webp',
@@ -29,7 +36,11 @@ export class HomeProjectsComponent{
         },
         {
             title: 'HClima',
-            description: 'HClima is a project that is used to check the weather of the day and week, it uses geolocation and the HG Weather API.',
+            description: `
+                HClima is a project that is used to check
+                the weather of the day and week, it uses geolocation and
+                the HG Weather API.
+            `,
             location: 'https://hclima.netlify.app',
             image: {
                 source: './assets/images/hclima.webp',

@@ -1,11 +1,11 @@
-import { MainPage } from './main.po';
+import { E2E } from './e2e.po';
 import { browser, logging } from 'protractor';
 
 describe('workspace-project App', () => {
-  let page: MainPage;
+  let page: E2E;
 
   beforeEach(() => {
-    page = new MainPage();
+    page = new E2E();
   });
 
   it('should display welcome message', async () => {
