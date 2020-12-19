@@ -15,7 +15,11 @@
     .home__main{
         display: flex;
         align-items: center;
-        margin: 6rem 0;
+        margin: 8rem 0;
+
+        @media(max-width: $tablet-width){
+            margin: 6rem 0;
+        }
 
         .home__title{
             font-family: 'Menlo', monospace;
