@@ -5,5 +5,4 @@ export interface HomeProjectsInterface {
     description: string;
     location: string;
     image: ImageInterface;
-    withoutName?: boolean;
 }

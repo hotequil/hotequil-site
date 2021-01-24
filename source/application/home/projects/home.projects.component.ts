@@ -65,8 +65,7 @@ export class HomeProjectsComponent{
             image: {
                 source: './assets/images/calculator-javascript.webp',
                 alternative: 'Calculator\'s image',
-            },
-            withoutName: true
+            }
         },
         {
             title: 'Eric Cartman',

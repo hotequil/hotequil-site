@@ -12,7 +12,6 @@
                 <p class="projects__description">{{ project.description }}</p>
                 <a rel="noreferrer"
                    class="projects__link"
-                   [ngClass]="project.withoutName ? 'projects__link--without-name' : ''"
                    [href]="project.location"
                    target="_blank">
                     View {{ project.title }}
