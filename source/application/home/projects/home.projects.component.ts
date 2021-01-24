@@ -10,6 +10,17 @@ import { HomeProjectsInterface } from './home.projects.interface';
 export class HomeProjectsComponent{
     projects: HomeProjectsInterface[] = [
         {
+            title: 'Lenóra Vitorino',
+            description: `
+                Lenóra Vitorino is a website made with Angular.
+            `,
+            location: 'https://lenora-vitorino.com',
+            image: {
+                source: './assets/images/lenora-vitorino.webp',
+                alternative: 'Lenóra Vitorino\'s image',
+            }
+        },
+        {
             title: 'Artifical Developers',
             description: `
                 Artifical Developers is a simple project, it is
