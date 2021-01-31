@@ -24,7 +24,7 @@ export class HomeHeadComponent{
         },
         {
             text: 'LinkedIn',
-            location: 'https://www.linkedin.com/in/jo%C3%A3o-paulo-hotequil-3044b4173',
+            location: 'https://www.linkedin.com/in/joao-paulo-hotequil',
             target: '_blank'
         },
         {
@@ -34,7 +34,7 @@ export class HomeHeadComponent{
         },
         {
             text: 'LBRY',
-            location: 'https://lbry.tv/@hotequil:7',
+            location: 'https://lbry.tv/@hotequil',
             target: '_blank'
         },
         {
@@ -43,7 +43,5 @@ export class HomeHeadComponent{
             target: '_blank',
         },
     ];
-    buttons: LinkInterface[] = [
-
-    ];
+    buttons: LinkInterface[] = [];
 }
