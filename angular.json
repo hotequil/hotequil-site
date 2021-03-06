@@ -11,25 +11,25 @@
                 }
             },
             "root": "",
-            "sourceRoot": "source",
-            "prefix": "hotequil",
+            "sourceRoot": "src",
+            "prefix": "h",
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
                         "outputPath": "dist/hotequil",
-                        "index": "source/pages/index.html",
-                        "main": "source/configurations/main.ts",
-                        "polyfills": "source/configurations/polyfills.ts",
+                        "index": "src/pages/index.html",
+                        "main": "src/configs/main.ts",
+                        "polyfills": "src/configs/polyfills.ts",
                         "tsConfig": "tsconfig.app.json",
                         "aot": true,
                         "assets": [
-                            "source/assets",
-                            "source/_redirects",
-                            "source/robots.txt"
+                            "src/assets",
+                            "src/seo/_redirects",
+                            "src/seo/robots.txt"
                         ],
                         "styles": [
-                            "source/style-sheets/styles.scss"
+                            "src/stylesheets/styles.scss"
                         ],
                         "scripts": []
                     },
@@ -37,8 +37,8 @@
                         "production": {
                             "fileReplacements": [
                                 {
-                                    "replace": "source/environments/environment.development.ts",
-                                    "with": "source/environments/environment.production.ts"
+                                    "replace": "src/envs/env.dev.ts",
+                                    "with": "src/envs/env.prod.ts"
                                 }
                             ],
                             "optimization": true,
@@ -83,17 +83,17 @@
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
-                        "main": "source/configurations/test.ts",
-                        "polyfills": "source/configurations/polyfills.ts",
+                        "main": "src/configs/test.ts",
+                        "polyfills": "src/configs/polyfills.ts",
                         "tsConfig": "tsconfig.spec.json",
                         "karmaConfig": "karma.conf.js",
                         "assets": [
-                            "source/assets",
-                            "source/_redirects",
-                            "source/robots.txt"
+                            "src/assets",
+                            "src/seo/_redirects",
+                            "src/seo/robots.txt"
                         ],
                         "styles": [
-                            "source/style-sheets/styles.scss"
+                            "src/stylesheets/styles.scss"
                         ],
                         "scripts": []
                     }
@@ -102,15 +102,15 @@
                     "builder": "@angular-eslint/builder:lint",
                     "options": {
                         "lintFilePatterns": [
-                            "source/**/*.ts",
-                            "source/**/*.html"
+                            "src/**/*.ts",
+                            "src/**/*.html"
                         ]
                     }
                 },
                 "e2e": {
                     "builder": "@angular-devkit/build-angular:protractor",
                     "options": {
-                        "protractorConfig": "source/e2e/protractor.conf.js",
+                        "protractorConfig": "src/e2e/protractor.conf.js",
                         "devServerTarget": "hotequil:serve"
                     },
                     "configurations": {

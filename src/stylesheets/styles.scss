@@ -1,0 +1,60 @@
+@import "normalize";
+@import "fonts";
+@import "vars";
+@import "mixins";
+@import "placeholders";
+
+html, body{
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: normal;
+    color: $black-color;
+    background-color: $white-color;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+
+    @media(max-width: $tablet-width){
+         font-size: 14px;
+    }
+}
+
+body{
+    $space: 2rem;
+
+    margin: 6rem auto 0 auto;
+    padding: 0 $space;
+    max-width: 1200px;
+
+    @media(max-width: $tablet-width){
+        margin-top: $space;
+    }
+}
+
+.noscript{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Menlo', monospace;
+    font-weight: 400;
+    margin: 0;
+
+    .noscript__strong{
+        font-style: oblique;
+    }
+}
+
+*{
+    @extend %no-selection;
+
+    $selection-color: lighten($primary-color, 12%);
+
+    &::selection{
+        color: $white-color;
+        background-color: $selection-color;
+    }
+
+    outline-color: $selection-color;
+}

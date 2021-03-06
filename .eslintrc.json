@@ -11,7 +11,7 @@
             "parserOptions": {
                 "project": [
                     "tsconfig.json",
-                    "source/e2e/tsconfig.json"
+                    "src/e2e/tsconfig.json"
                 ],
                 "createDefaultProgram": true
             },
@@ -25,7 +25,7 @@
                     "error",
                     {
                         "type": "element",
-                        "prefix": "hotequil",
+                        "prefix": "h",
                         "style": "kebab-case"
                     }
                 ],
@@ -33,8 +33,8 @@
                     "error",
                     {
                         "type": "attribute",
-                        "prefix": "hotequil",
-                        "style": "kebab-case"
+                        "prefix": "h",
+                        "style": "camelCase"
                     }
                 ],
                 "curly": "off",
