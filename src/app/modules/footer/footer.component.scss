@@ -1,0 +1,24 @@
+@import "../../../stylesheets/mixins";
+@import "../../../stylesheets/vars";
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid $black-color;
+
+    .footer__text{
+        text-align: center;
+        margin: 2rem 1rem;
+        line-height: 1.5;
+        font-size: .85rem;
+        color: $black-color;
+
+        .footer__link{
+            color: $primary-color;
+
+            @include link();
+        }
+    }
+}

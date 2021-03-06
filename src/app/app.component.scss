@@ -1,0 +1,16 @@
+@import "../stylesheets/vars";
+
+.app{
+    position: relative;
+
+    .app__sub{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: -1;
+        color: $white-color;
+        opacity: 0;
+    }
+}
