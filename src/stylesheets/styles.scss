@@ -1,5 +1,4 @@
 @import "normalize";
-@import "fonts";
 @import "vars";
 @import "mixins";
 @import "placeholders";
@@ -12,6 +11,7 @@ html, body{
     margin: 0;
     padding: 0;
     font-size: 16px;
+    height: -webkit-fill-available;
 
     @media(max-width: $tablet-width){
          font-size: 14px;

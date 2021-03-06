@@ -2,6 +2,9 @@
 
 .app{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
     .app__sub{
         position: fixed;
@@ -12,5 +15,12 @@
         z-index: -1;
         color: $white-color;
         opacity: 0;
+    }
+
+    .app__footer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-end;
     }
 }
