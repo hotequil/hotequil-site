@@ -18,9 +18,9 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/hotequil/browser",
-            "index": "src/pages/index.html",
-            "main": "src/configs/main.ts",
-            "polyfills": "src/configs/polyfills.ts",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
@@ -82,8 +82,8 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "src/configs/test.ts",
-            "polyfills": "src/configs/polyfills.ts",
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
@@ -130,8 +130,8 @@
               "outputHashing": "media",
               "fileReplacements": [
                 {
-                  "replace": "src/envs/env.dev.ts",
-                  "with": "src/envs/env.prod.ts"
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
                 }
               ],
               "sourceMap": false,

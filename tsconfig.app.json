@@ -6,8 +6,8 @@
     "types": []
   },
   "files": [
-      "src/configs/main.ts",
-      "src/configs/polyfills.ts"
+      "src/main.ts",
+      "src/polyfills.ts"
   ],
   "include": [
       "src/**/*.d.ts"
