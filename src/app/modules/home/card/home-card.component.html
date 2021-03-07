@@ -1,7 +1,17 @@
 <section class="card">
     <div class="card__container-img">
-        <img class="card__img card__img--first" [src]="img?.src" [alt]="img?.alt">
-        <img *ngIf="showLogoImg" aria-hidden="true" class="card__img card__img--second" [src]="logoImgObservable | async" alt="João Paulo Hotequil's image">
+        <div class="card__img card__img--first"
+             role="img"
+             [ngStyle]="{ 'background-image': 'url(' + (img?.src) + ')' }"
+             [attr.aria-label]="img?.alt">
+        </div>
+        <div *ngIf="showLogoImg"
+             aria-hidden="true"
+             role="img"
+             class="card__img card__img--second"
+             [ngStyle]="{ 'background-image': 'url(' + (logoImgObservable | async) + ')' }"
+             aria-label="João Paulo Hotequil's image">
+        </div>
     </div>
     <div class="card__container">
         <h1 class="card__name">{{ name }}</h1>

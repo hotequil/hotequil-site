@@ -56,6 +56,9 @@
         .card__img{
             @include fix-size(75px, 75px);
 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
             position: absolute;
             top: 0;
             bottom: 0;
