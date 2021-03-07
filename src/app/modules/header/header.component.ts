@@ -1,14 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-import { Img } from '../../../shared/models/img/img';
-import { Link } from '../../../shared/models/link/link';
+import { Observable, of } from 'rxjs';
+
+import { Link } from '../../shared/models/link/link';
+import { Img } from '../../shared/models/img/img';
 
 @Component({
-    selector: 'h-home-head',
-    templateUrl: './home-head.component.html',
-    styleUrls: ['./home-head.component.scss']
+    selector: 'h-header',
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.scss']
 })
-export class HomeHeadComponent{
+export class HeaderComponent implements OnInit{
+    logoImgObservable: Observable<string> = of("./assets/imgs/hotequil.webp");
+    showLogoImg = false;
     name = 'João Paulo Hotequil';
     img: Img = { src: './assets/imgs/logo.svg', alt: 'João Paulo Hotequil\'s img' };
     links: Link[] = [
@@ -43,5 +47,8 @@ export class HomeHeadComponent{
             target: '_blank',
         },
     ];
-    buttons: Link[] = [];
+
+    ngOnInit(): void{
+        setTimeout(() => this.showLogoImg = true, 1000);
+    }
 }

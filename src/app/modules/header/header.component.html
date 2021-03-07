@@ -1,0 +1,28 @@
+<header class="header">
+    <section class="header__content">
+        <div class="header__container-img">
+            <div class="header__img header__img--first"
+                 role="img"
+                 [ngStyle]="{ 'background-image': 'url(' + (img?.src) + ')' }"
+                 [attr.aria-label]="img?.alt">
+            </div>
+            <div *ngIf="showLogoImg"
+                 aria-hidden="true"
+                 role="img"
+                 class="header__img header__img--second"
+                 [ngStyle]="{ 'background-image': 'url(' + (logoImgObservable | async) + ')' }"
+                 aria-label="João Paulo Hotequil's image">
+            </div>
+        </div>
+        <div class="header__container">
+            <h1 class="header__name">{{ name }}</h1>
+            <nav>
+                <ul class="header__list">
+                    <li class="header__list-item" *ngFor="let link of links">
+                        <a rel="noreferrer" class="header__link" [href]="link?.href" [target]="link?.target">{{ link?.text }}</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+</header>

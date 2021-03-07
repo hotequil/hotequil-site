@@ -2,8 +2,10 @@ import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from '../app/app.module';
-import { env } from '../envs/env.dev';
+import { environment } from '../environments/environment';
 
-if(env.prod) enableProdMode();
+if(environment.prod) enableProdMode();
 
-document.addEventListener('DOMContentLoaded', () => platformBrowserDynamic().bootstrapModule(AppModule).catch(err => console.error(err)));
+document.addEventListener('DOMContentLoaded', () =>
+    platformBrowserDynamic().bootstrapModule(AppModule).catch(err => console.error(err))
+);
