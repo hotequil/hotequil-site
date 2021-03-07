@@ -4,7 +4,7 @@
 
 .projects{
     $margin: 4rem;
-    $small-margin: ($margin / 5);
+    $small-margin: .5rem;
 
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@
                 width: 100%;
                 min-width: 100%;
                 max-width: 100%;
-                margin-bottom: $small-margin * 1.5;
+                margin-bottom: 1.25rem;
                 border-radius: 25px;
                 transition: border-radius $time-transition, background-size $time-transition, box-shadow $time-transition;
                 background-position: center;
