@@ -7,7 +7,7 @@
                  [ngStyle]="{'background-image': 'url(' + project.img.src + ')'}"
                  [attr.aria-label]="project.img.alt">
             </div>
-            <div class="projects__container">
+            <article class="projects__container">
                 <h4 class="projects__title-item">{{ project.title }}</h4>
                 <p class="projects__desc">{{ project.desc }}</p>
                 <a rel="noreferrer"
@@ -16,7 +16,7 @@
                    target="_blank">
                     View {{ project.title }}
                 </a>
-            </div>
+            </article>
         </li>
     </ul>
 </section>
