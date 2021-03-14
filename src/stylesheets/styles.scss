@@ -1,13 +1,12 @@
-// use .styl
-
+@import "reset";
 @import "normalize";
 @import "variables";
 @import "mixins";
 @import "placeholders";
 
 html, body{
-    font-family: 'Roboto', Arial, sans-serif;
-    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     color: $black-color;
     background-color: $white-color;
     margin: 0;
@@ -39,7 +38,7 @@ body{
     font-size: 2rem;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-family: 'Menlo', monospace;
+    font-family: 'Roboto Mono', monospace;
     font-weight: 400;
     margin: 0;
 

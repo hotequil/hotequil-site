@@ -4,9 +4,9 @@
 
 .header{
     .header__content{
-        $space: .375rem;
-        $space-links: $space * 1.5;
-        $space-container: $space * 2;
+        $space: .5rem;
+        $space-links: .5rem;
+        $space-container: 1rem;
 
         display: flex;
         flex-direction: row;
@@ -23,7 +23,7 @@
                 font-weight: 600;
                 text-align: left;
                 margin: 0 0 $space 0;
-                font-family: 'Berkshire Swash', fantasy, serif;
+                font-family: 'Berkshire Swash', serif;
 
                 @extend %line-height-default;
             }
