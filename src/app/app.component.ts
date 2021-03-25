@@ -8,5 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit{
     ngOnInit(): void{
         console.log('Freedom.');
+        console.log(`
+
+
+                /     /      _______                        /
+               /     /         /                         o /
+              /-----/ /-----/ / /-----/ /-----/ /     / / /
+             /     / /     / / /  ___/ /     / /     / / /
+            /     / /-----/ / /_____/ /_____/ /_____/ / /
+                                           /
+                                          /
+        `)
     }
 }
