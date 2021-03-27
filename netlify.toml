@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build:ssr"
+  command = "npm run prerender"
   functions = "./functions"
   publish = "dist/hotequil/browser"
 [[redirects]]
