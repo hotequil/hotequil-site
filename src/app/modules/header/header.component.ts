@@ -13,6 +13,7 @@ import { Btn } from '../../shared/models/btn/btn';
     styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit{
+    showBtns =  false;
     isBrowser =  false;
     keyFtSz = 'ftSz';
     keyFilter = 'filter';
@@ -89,7 +90,10 @@ export class HeaderComponent implements OnInit{
     }
 
     ngOnInit(): void{
-        if(this.isBrowser) this.htmlEl = document.querySelector('[data-html]');
+        if(this.isBrowser){
+            this.showBtns = true;
+            this.htmlEl = document.querySelector('[data-html]');
+        }
 
         this.setFtSz(Number(localStorage.getItem(this.keyFtSz)));
         this.setFilter(this.getFilterOnLocalStorage);

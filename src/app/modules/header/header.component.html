@@ -24,7 +24,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="header__actions">
+        <div class="header__actions" *ngIf="showBtns">
             <h-btn *ngFor="let btn of btns"
                    [active]="btn.active()"
                    [click]="btn.click.bind(this)"
