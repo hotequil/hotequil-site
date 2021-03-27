@@ -24,5 +24,11 @@
                 </ul>
             </nav>
         </div>
+        <div class="header__actions">
+            <h-btn [click]="changeFontSize.bind(this,1)" txt="A+"></h-btn>
+            <h-btn [click]="changeFontSize.bind(this, -1)" txt="A-"></h-btn>
+            <h-btn [active]="greyVal === getFilterOnLocalStorage" [click]="toggleFilter.bind(this, greyVal)" txt="Alto contraste"></h-btn>
+            <h-btn [active]="invertVal === getFilterOnLocalStorage" [click]="toggleFilter.bind(this, invertVal)" txt="Inverter cores"></h-btn>
+        </div>
     </section>
 </header>

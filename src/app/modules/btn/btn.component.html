@@ -1,1 +1,8 @@
-<p>btn works!</p>
+<button type="button"
+        class="btn"
+        [ngClass]="{'btn--active': active}"
+        (click)="click()"
+        (keydown.enter)="click()"
+        tabindex="0">
+    {{ txt }}
+</button>

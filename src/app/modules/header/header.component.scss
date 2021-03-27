@@ -3,11 +3,30 @@
 @import "../../../stylesheets/placeholders";
 
 .header{
-    .header__content{
-        $space: .5rem;
-        $space-links: .5rem;
-        $space-container: 1rem;
+    $space: .5rem;
+    $space-links: .5rem;
+    $space-container: 1rem;
 
+    &__actions{
+        $space-btn: ($space-links / 2);
+
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        margin: 0 (-$space-btn) 0 (-$space-btn);
+
+        > *{
+            margin: 0 $space-btn ($space-btn * 2) $space-btn;
+        }
+
+        @media(max-width: $tablet-width){
+            justify-content: flex-start;
+        }
+    }
+
+    .header__content{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -90,7 +109,7 @@
             position: relative;
         }
 
-        @media(max-width: $mobile-width){
+        @media(max-width: $tablet-width){
             display: flex;
             flex-direction: column;
             align-items: flex-start;

@@ -18,6 +18,6 @@ export class AppComponent implements OnInit{
             /     / /-----/ / /_____/ /_____/ /_____/ / /
                                            /
                                           /
-        `)
+        `);
     }
 }

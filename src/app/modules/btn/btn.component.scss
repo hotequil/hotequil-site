@@ -1,0 +1,25 @@
+@import "src/stylesheets/variables";
+
+.btn{
+    background-color: transparent;
+    border: $border;
+    border-radius: $radius;
+    color: $primary-color;
+    padding: .25rem .5rem;
+    line-height: 1;
+    cursor: pointer;
+    outline: none;
+    font-size: .85rem;
+    box-sizing: border-box;
+    transition: color $time-transition, background-color $time-transition;
+
+    &:hover, &:focus, &--active{
+        background-color: $primary-color;
+        color: $white-color;
+    }
+
+    &:active{
+        background-color: $active-color;
+        border-color: $active-color;
+    }
+}
