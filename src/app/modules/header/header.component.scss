@@ -70,7 +70,7 @@
                 z-index: 1;
 
                 &.header__img--first{
-                    border-radius: 4px;
+                    border-radius: $radius;
                     z-index: 2;
 
                     &:hover, &:focus, &:active{

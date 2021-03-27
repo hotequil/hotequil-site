@@ -47,7 +47,7 @@
                 min-width: 100%;
                 max-width: 100%;
                 margin-bottom: 1rem;
-                border-radius: 24px;
+                border-radius: $radius;
                 transition: border-radius $time-transition, background-size $time-transition, box-shadow $time-transition;
                 background-position: center;
                 background-repeat: no-repeat;
