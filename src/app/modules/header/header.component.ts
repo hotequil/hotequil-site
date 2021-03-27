@@ -18,7 +18,6 @@ export class HeaderComponent implements OnInit{
     keyFtSz = 'ftSz';
     keyFilter = 'filter';
     greyVal = 'grayscale(1)';
-    invertVal = 'invert(1)';
     htmlEl: HTMLElement|null = null;
     logoImgObservable: Observable<string> = of("./assets/imgs/hotequil.webp");
     showLogoImg = false;
@@ -74,14 +73,8 @@ export class HeaderComponent implements OnInit{
         {
             txt: 'Alto contraste',
             ariaLabel: 'Alto contraste',
-            click: () => this.toggleFilter(this.greyVal),
+            click: () => this.toggleFilter(),
             active: () => this.greyVal === this.getFilterOnLocalStorage
-        },
-        {
-            txt: 'Inverter cores',
-            ariaLabel: 'Inverter cores',
-            click: () => this.toggleFilter(this.invertVal),
-            active: () => this.invertVal === this.getFilterOnLocalStorage
         }
     ];
 
@@ -111,7 +104,9 @@ export class HeaderComponent implements OnInit{
         }
     }
 
-    private toggleFilter(filter: string): void{
+    private toggleFilter(): void{
+        let filter = this.greyVal;
+
         if(this.getFilterOnLocalStorage === filter) filter = '';
 
         this.setFilter(filter);
@@ -123,11 +118,7 @@ export class HeaderComponent implements OnInit{
     }
 
     private setFilter(filter: string): void{
-        if (this.isBrowser) {
-            this.renderer.removeStyle(this.htmlEl, 'filter');
-
-            setTimeout(() => this.renderer.setStyle(this.htmlEl, 'filter', filter), 100);
-        }
+        if (this.isBrowser) this.renderer.setStyle(this.htmlEl, 'filter', filter);
     }
 
     private setFtSz(val: number): void{
