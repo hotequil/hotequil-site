@@ -1,6 +1,6 @@
 export interface Btn{
     txt: string;
     ariaLabel: string;
-    click(...args: any[]): any;
+    click(...args: never[]|any[]): any;
     active(): boolean;
 }

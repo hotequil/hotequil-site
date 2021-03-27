@@ -17,7 +17,7 @@ export class HomeProjectsComponent{
             href: 'https://lenora-vitorino.com',
             img: {
                 src: './assets/imgs/lenora-vitorino.webp',
-                alt: 'Lenóra Vitorino\'s img',
+                alt: 'Lenóra Vitorino\'s',
             }
         },
         {
@@ -30,7 +30,7 @@ export class HomeProjectsComponent{
             href: 'https://artificaldevelopers.netlify.app',
             img: {
                 src: './assets/imgs/artifical-developers.webp',
-                alt: 'Artifical Developers\'s img',
+                alt: 'Artifical Developers\'s',
             }
         },
         {
@@ -42,7 +42,7 @@ export class HomeProjectsComponent{
             href: 'https://diariohz.com.br',
             img: {
                 src: './assets/imgs/diario-hz.webp',
-                alt: 'Diário HZ\'s img',
+                alt: 'Diário HZ\'s',
             }
         },
         {
@@ -55,7 +55,7 @@ export class HomeProjectsComponent{
             href: 'https://hclima.netlify.app',
             img: {
                 src: './assets/imgs/hclima.webp',
-                alt: 'HClima\'s img',
+                alt: 'HClima\'s',
             }
         },
         {
@@ -64,7 +64,7 @@ export class HomeProjectsComponent{
             href: 'https://calculatorjavascript.netlify.app',
             img: {
                 src: './assets/imgs/calculator-javascript.webp',
-                alt: 'Calculator\'s img',
+                alt: 'Calculator\'s',
             }
         },
         {
@@ -73,7 +73,7 @@ export class HomeProjectsComponent{
             href: 'https://eric-cartman.netlify.app',
             img: {
                 src: './assets/imgs/eric-cartman.webp',
-                alt: 'Eric Cartman\'s img',
+                alt: 'Eric Cartman\'s',
             }
         }
     ];
