@@ -3,6 +3,7 @@
         [ngClass]="{'btn--active': active}"
         (click)="click()"
         (keydown.enter)="click()"
+        [attr.aria-label]="ariaLabel"
         tabindex="0">
     {{ txt }}
 </button>
