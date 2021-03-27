@@ -2,10 +2,10 @@
   command = "npm run prerender"
   functions = "./functions"
   publish = "dist/hotequil/browser"
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 301
+#[[redirects]]
+#  from = "/*"
+#  to = "/index.html"
+#  status = 301
 [[headers]]
     for = "/*"
         [headers.values]

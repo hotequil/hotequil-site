@@ -13,8 +13,8 @@ import { Btn } from '../../shared/models/btn/btn';
     styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit{
-    showBtns =  false;
-    isBrowser =  false;
+    showBtns = false;
+    isBrowser = false;
     keyFtSz = 'ftSz';
     keyFilter = 'filter';
     greyVal = 'grayscale(1)';
