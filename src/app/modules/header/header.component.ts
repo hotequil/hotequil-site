@@ -92,7 +92,7 @@ export class HeaderComponent implements OnInit{
     ngOnInit(): void{
         if(this.isBrowser){
             this.showBtns = true;
-            this.htmlEl = document.querySelector('[data-html]');
+            this.htmlEl = document.querySelector('html');
         }
 
         this.setFtSz(Number(localStorage.getItem(this.keyFtSz)));
