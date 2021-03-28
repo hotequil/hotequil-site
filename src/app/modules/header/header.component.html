@@ -24,13 +24,13 @@
                 </ul>
             </nav>
         </div>
-<!--        <div class="header__actions" *ngIf="showBtns">-->
-<!--            <h-btn *ngFor="let btn of btns"-->
-<!--                   [active]="btn.active()"-->
-<!--                   [click]="btn.click.bind(this)"-->
-<!--                   [ariaLabel]="btn.ariaLabel"-->
-<!--                   [txt]="btn.txt">-->
-<!--            </h-btn>-->
-<!--        </div>-->
+        <div class="header__actions" *ngIf="showBtns">
+            <h-btn *ngFor="let btn of btns"
+                   [active]="btn.active()"
+                   [click]="btn.click.bind(this)"
+                   [ariaLabel]="btn.ariaLabel"
+                   [txt]="btn.txt">
+            </h-btn>
+        </div>
     </section>
 </header>
