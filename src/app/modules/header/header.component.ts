@@ -13,12 +13,12 @@ import { Btn } from '../../shared/models/btn/btn';
     styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit{
-    showBtns = false;
-    isBrowser = false;
-    keyFtSz = 'ftSz';
-    keyFilter = 'filter';
-    greyVal = 'grayscale(1)';
-    htmlEl: HTMLElement|null = null;
+    // showBtns = false;
+    // isBrowser = false;
+    // keyFtSz = 'ftSz';
+    // keyFilter = 'filter';
+    // greyVal = 'grayscale(1)';
+    // htmlEl: HTMLElement|null = null;
     logoImgObservable: Observable<string> = of("./assets/imgs/hotequil.webp");
     showLogoImg = false;
     name = 'João Paulo Hotequil';
@@ -57,73 +57,73 @@ export class HeaderComponent implements OnInit{
         },
     ];
 
-    btns: Btn[] = [
-        {
-            txt: 'A+',
-            ariaLabel: 'Aumentar tamanho de fonte',
-            click: () => this.changeFontSize(1),
-            active: () => false
-        },
-        {
-            txt: 'A-',
-            ariaLabel: 'Diminuir tamanho de fonte',
-            click: () => this.changeFontSize(-1),
-            active: () => false
-        },
-        {
-            txt: 'Alto contraste',
-            ariaLabel: 'Alto contraste',
-            click: () => this.toggleFilter(),
-            active: () => this.greyVal === this.getFilterOnLocalStorage
-        }
-    ];
-
-    constructor(@Inject(PLATFORM_ID) platformId: string, private renderer: Renderer2) {
-        this.isBrowser = isPlatformBrowser(platformId);
-    }
-
+    // btns: Btn[] = [
+    //     {
+    //         txt: 'A+',
+    //         ariaLabel: 'Aumentar tamanho de fonte',
+    //         click: () => this.changeFontSize(1),
+    //         active: () => false
+    //     },
+    //     {
+    //         txt: 'A-',
+    //         ariaLabel: 'Diminuir tamanho de fonte',
+    //         click: () => this.changeFontSize(-1),
+    //         active: () => false
+    //     },
+    //     {
+    //         txt: 'Alto contraste',
+    //         ariaLabel: 'Alto contraste',
+    //         click: () => this.toggleFilter(),
+    //         active: () => this.greyVal === this.getFilterOnLocalStorage
+    //     }
+    // ];
+    //
+    // constructor(@Inject(PLATFORM_ID) platformId: string, private renderer: Renderer2) {
+    //     this.isBrowser = isPlatformBrowser(platformId);
+    // }
+    //
     ngOnInit(): void{
-        if(this.isBrowser){
-            this.showBtns = true;
-            this.htmlEl = document.querySelector('html');
-        }
-
-        this.setFtSz(Number(localStorage.getItem(this.keyFtSz)));
-        this.setFilter(this.getFilterOnLocalStorage);
+        // if(this.isBrowser){
+        //     this.showBtns = true;
+        //     this.htmlEl = document.querySelector('html');
+        // }
+        //
+        // this.setFtSz(Number(localStorage.getItem(this.keyFtSz)));
+        // this.setFilter(this.getFilterOnLocalStorage);
 
         setTimeout(() => this.showLogoImg = true, 1000);
     }
-
-    private changeFontSize(val: number): void{
-        const ftSz = Number(getComputedStyle(this.htmlEl as HTMLElement).fontSize.replace(/\D/g, ''));
-        const finalVal = ftSz + val;
-
-        if(finalVal <= 20 && finalVal >= 12){
-            this.setFtSz(finalVal);
-            localStorage.setItem(this.keyFtSz, String(finalVal));
-        }
-    }
-
-    private toggleFilter(): void{
-        let filter = this.greyVal;
-
-        if(this.getFilterOnLocalStorage === filter) filter = '';
-
-        this.setFilter(filter);
-        localStorage.setItem(this.keyFilter, filter);
-    }
-
-    private get getFilterOnLocalStorage(): string{
-        return localStorage.getItem(this.keyFilter) as string;
-    }
-
-    private setFilter(filter: string): void{
-        if (this.isBrowser) this.renderer.setStyle(this.htmlEl, 'filter', filter);
-    }
-
-    private setFtSz(val: number): void{
-        if (this.isBrowser && val) {
-            this.renderer.setStyle(this.htmlEl, 'font-size', `${val}px`);
-        }
-    }
+    //
+    // private changeFontSize(val: number): void{
+    //     const ftSz = Number(getComputedStyle(this.htmlEl as HTMLElement).fontSize.replace(/\D/g, ''));
+    //     const finalVal = ftSz + val;
+    //
+    //     if(finalVal <= 20 && finalVal >= 12){
+    //         this.setFtSz(finalVal);
+    //         localStorage.setItem(this.keyFtSz, String(finalVal));
+    //     }
+    // }
+    //
+    // private toggleFilter(): void{
+    //     let filter = this.greyVal;
+    //
+    //     if(this.getFilterOnLocalStorage === filter) filter = '';
+    //
+    //     this.setFilter(filter);
+    //     localStorage.setItem(this.keyFilter, filter);
+    // }
+    //
+    // private get getFilterOnLocalStorage(): string{
+    //     return localStorage.getItem(this.keyFilter) as string;
+    // }
+    //
+    // private setFilter(filter: string): void{
+    //     if (this.isBrowser) this.renderer.setStyle(this.htmlEl, 'filter', filter);
+    // }
+    //
+    // private setFtSz(val: number): void{
+    //     if (this.isBrowser && val) {
+    //         this.renderer.setStyle(this.htmlEl, 'font-size', `${val}px`);
+    //     }
+    // }
 }
