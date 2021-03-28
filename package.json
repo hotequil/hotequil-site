@@ -11,7 +11,7 @@
     "dev:ssr": "ng run hotequil:serve-ssr",
     "serve:ssr": "node dist/hotequil/server/main.js",
     "build:ssr": "npm i && ng build --prod && ng run hotequil:server:production && npm run prerender",
-    "prerender": "rm -rf node_modules && rm -rf dist && npm i && ng run hotequil:prerender"
+    "prerender": "npm i && ng run hotequil:prerender"
   },
   "private": true,
   "dependencies": {
