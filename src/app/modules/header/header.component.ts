@@ -109,8 +109,10 @@ export class HeaderComponent implements OnInit{
 
         if(this.getFilterOnLocalStorage === filter) filter = '';
 
-        this.setFilter(filter);
-        window.localStorage.setItem(this.keyFilter, filter);
+        setTimeout(() => {
+            this.setFilter(filter);
+            window.localStorage.setItem(this.keyFilter, filter);
+        }, 100);
     }
 
     private get getFilterOnLocalStorage(): string{

@@ -19,6 +19,7 @@
 
     transition: color $time-transition, box-shadow $time-transition;
     text-decoration: none;
+    outline: none;
 
     &:hover, &:focus{
         box-shadow: $box-shadow $primary-color;
