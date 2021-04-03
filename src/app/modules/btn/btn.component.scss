@@ -22,7 +22,7 @@
 
     &:hover{
         .btn__tooltip{
-            visibility: visible;
+            opacity: 1;
         }
     }
 
@@ -32,7 +32,8 @@
     }
 
     &__tooltip{
-        visibility: hidden;
+        opacity: 0;
+        transition: opacity $time-transition;
         white-space: nowrap;
         background-color: $black-color;
         color: $white-color;
