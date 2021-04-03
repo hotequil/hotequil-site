@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 export class BtnComponent{
     @Input() txt = '';
     @Input() ariaLabel = '';
+    @Input() tooltip = '';
     @Input() active = false;
     @Input() click = () => {};
 }

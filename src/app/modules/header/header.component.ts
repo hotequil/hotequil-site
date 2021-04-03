@@ -1,11 +1,12 @@
 import { Component, Inject, OnInit, PLATFORM_ID, Renderer2 } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
-import { Observable, of } from 'rxjs';
+import { fromEvent, Observable, of } from 'rxjs';
 
 import { Link } from '../../shared/models/link/link';
 import { Img } from '../../shared/models/img/img';
-import { isPlatformBrowser } from '@angular/common';
 import { Btn } from '../../shared/models/btn/btn';
+import { Letters } from '../../shared/enums/letters.enum';
 
 @Component({
     selector: 'h-header',
@@ -60,19 +61,22 @@ export class HeaderComponent implements OnInit{
     btns: Btn[] = [
         {
             txt: 'A+',
-            ariaLabel: 'Aumentar tamanho de fonte',
-            click: () => this.changeFontSize(1),
+            ariaLabel: 'Increase font size',
+            tooltip: 'Ctrl + Alt + B',
+            click: () => this.fontBigger(),
             active: () => false
         },
         {
             txt: 'A-',
-            ariaLabel: 'Diminuir tamanho de fonte',
-            click: () => this.changeFontSize(-1),
+            ariaLabel: 'Decrease font size',
+            tooltip: 'Ctrl + Alt + S',
+            click: () => this.fontSmaller(),
             active: () => false
         },
         {
-            txt: 'Alto contraste',
+            txt: 'High contrast',
             ariaLabel: 'Alto contraste',
+            tooltip: 'Ctrl + Alt + C',
             click: () => this.toggleFilter(),
             active: () => this.greyVal === this.getFilterOnLocalStorage
         }
@@ -89,6 +93,22 @@ export class HeaderComponent implements OnInit{
 
             this.setFtSz(Number(window.localStorage.getItem(this.keyFtSz)));
             this.setFilter(this.getFilterOnLocalStorage);
+
+            fromEvent(window, 'keydown').subscribe((evt: any) => {
+                if(evt && evt.ctrlKey && evt.altKey){
+                    switch(String.fromCharCode(evt.which).toLowerCase()){
+                        case Letters.B:
+                            this.fontBigger();
+                            break;
+                        case Letters.S:
+                            this.fontSmaller();
+                            break;
+                        case Letters.C:
+                            this.toggleFilter();
+                            break;
+                    }
+                }
+            })
         }
 
         setTimeout(() => this.showLogoImg = true, 1000);
@@ -127,5 +147,13 @@ export class HeaderComponent implements OnInit{
         if (this.isBrowser && val) {
             this.renderer.setStyle(this.htmlEl, 'font-size', `${val}px`);
         }
+    }
+
+    private fontBigger(): void{
+        this.changeFontSize(1);
+    }
+
+    private fontSmaller(): void{
+        this.changeFontSize(-1);
     }
 }

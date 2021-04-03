@@ -26,7 +26,9 @@
         </div>
         <div class="header__actions" *ngIf="showBtns">
             <h-btn *ngFor="let btn of btns"
+                   class="header__btn"
                    [active]="btn.active()"
+                   [tooltip]="btn.tooltip"
                    [click]="btn.click.bind(this)"
                    [ariaLabel]="btn.ariaLabel"
                    [txt]="btn.txt">

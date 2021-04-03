@@ -7,6 +7,12 @@
     $space-links: .5rem;
     $space-container: 1rem;
 
+    &__btn{
+        ::ng-deep .btn__tooltip{
+            text-transform: uppercase;
+        }
+    }
+
     &__actions{
         $space-btn: ($space-links / 2);
 

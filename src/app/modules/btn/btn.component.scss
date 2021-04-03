@@ -12,14 +12,41 @@
     font-size: .85rem;
     box-sizing: border-box;
     transition: color $time-transition, background-color $time-transition;
+    position: relative;
+    display: inline-block;
 
     &:hover, &:focus, &--active{
         background-color: $primary-color;
         color: $white-color;
     }
 
+    &:hover{
+        .btn__tooltip{
+            visibility: visible;
+        }
+    }
+
     &:active{
         background-color: $active-color;
         border-color: $active-color;
+    }
+
+    &__tooltip{
+        visibility: hidden;
+        white-space: nowrap;
+        background-color: $black-color;
+        color: $white-color;
+        text-align: center;
+        border-radius: $radius;
+        padding: $radius ($radius * 2);
+        position: absolute;
+        z-index: 1;
+        box-sizing: border-box;
+        left: 50%;
+        top: 130%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-50%);
     }
 }
