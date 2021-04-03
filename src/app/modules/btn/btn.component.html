@@ -6,5 +6,5 @@
         [attr.aria-label]="ariaLabel"
         tabindex="0">
     {{ txt }}
-    <span class="btn__tooltip" *ngIf="tooltip">{{ tooltip }}</span>
+    <span role="tooltip" class="btn__tooltip" *ngIf="tooltip">{{ tooltip }}</span>
 </button>
