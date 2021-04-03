@@ -32,6 +32,7 @@
     }
 
     &__tooltip{
+        pointer-events: none;
         opacity: 0;
         transition: opacity $time-transition;
         white-space: nowrap;
