@@ -46,6 +46,17 @@ export class HomeProjectsComponent{
             }
         },
         {
+            title: 'FriendBot web page (FIAP)',
+            desc: `
+                This is a web page of a FIAP project called FriendBot.
+            `,
+            href: 'https://fiap-friendbot-web-page.netlify.app',
+            img: {
+                src: './assets/imgs/fiap-friendbot-web-page.webp',
+                alt: 'FriendBot\'s web page (FIAP)',
+            }
+        },
+        {
             title: 'HClima',
             desc: `
                 HClima is a project that is used to check
@@ -65,6 +76,17 @@ export class HomeProjectsComponent{
             img: {
                 src: './assets/imgs/calculator-javascript.webp',
                 alt: 'Calculator\'s',
+            }
+        },
+        {
+            title: 'Testing UX icons',
+            desc: `
+                This is a small page to test the user's intuition regarding web application iconography.
+            `,
+            href: 'https://testing-ux-icons.netlify.app',
+            img: {
+                src: './assets/imgs/testing-ux-icons.webp',
+                alt: 'Testing UX icons\'',
             }
         },
         {
