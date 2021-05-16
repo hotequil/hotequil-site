@@ -88,8 +88,8 @@ export class HomeProjectsComponent{
             }
         },
         {
-            title: 'Asteroid game',
-            desc: 'This is a game made with HTML and JavaScript.',
+            title: 'Asteroid game (FIAP)',
+            desc: 'This is a game made with HTML and JavaScript for a FIAP activity.',
             href: 'https://fiap-asteroid-game.netlify.app',
             img: {
                 src: './assets/imgs/fiap-asteroid-game.webp',
