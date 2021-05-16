@@ -79,6 +79,24 @@ export class HomeProjectsComponent{
             }
         },
         {
+            title: 'Eric Cartman',
+            desc: 'This is the Eric Cartman drawed with HTML and CSS.',
+            href: 'https://eric-cartman.netlify.app',
+            img: {
+                src: './assets/imgs/eric-cartman.webp',
+                alt: 'Eric Cartman\'s',
+            }
+        },
+        {
+            title: 'Asteroid game',
+            desc: 'This is a game made with HTML and JavaScript.',
+            href: 'https://fiap-asteroid-game.netlify.app',
+            img: {
+                src: './assets/imgs/fiap-asteroid-game.webp',
+                alt: 'Asteroid game\'s',
+            }
+        },
+        {
             title: 'Testing UX icons',
             desc: `
                 This is a small page to test the user's intuition regarding web application iconography.
@@ -87,15 +105,6 @@ export class HomeProjectsComponent{
             img: {
                 src: './assets/imgs/testing-ux-icons.webp',
                 alt: 'Testing UX icons\'',
-            }
-        },
-        {
-            title: 'Eric Cartman',
-            desc: 'This is the Eric Cartman drawed with HTML and CSS.',
-            href: 'https://eric-cartman.netlify.app',
-            img: {
-                src: './assets/imgs/eric-cartman.webp',
-                alt: 'Eric Cartman\'s',
             }
         }
     ];
