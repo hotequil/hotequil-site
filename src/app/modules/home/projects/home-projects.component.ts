@@ -21,6 +21,15 @@ export class HomeProjectsComponent{
             }
         },
         {
+            title: 'Angular with Service Worker and Web Notification',
+            desc: `This is a project to create notifications using Angular, Service Worker and Web Notification.`,
+            href: 'https://angular-sw-web-notification.netlify.app',
+            img: {
+                src: './assets/imgs/ng-sw-web-notification.webp',
+                alt: 'Web Notification\'s project',
+            }
+        },
+        {
             title: 'Artifical Developers',
             desc: `
                 Artifical Developers is a simple project, it is

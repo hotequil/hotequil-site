@@ -108,7 +108,7 @@ export class HeaderComponent implements OnInit{
                             break;
                     }
                 }
-            })
+            });
         }
 
         setTimeout(() => this.showLogoImg = true, 1000);
