@@ -42,18 +42,18 @@ export class HomeProjectsComponent{
                 alt: 'Artifical Developers\'s',
             }
         },
-        {
-            title: 'Diário HZ',
-            desc: `
-                Diário HZ is a blog that has publications related to freedom,
-                anarchism, thoughts and indignations.
-            `,
-            href: 'https://diariohz.com.br',
-            img: {
-                src: './assets/imgs/diario-hz.webp',
-                alt: 'Diário HZ\'s',
-            }
-        },
+        // {
+        //     title: 'Diário HZ',
+        //     desc: `
+        //         Diário HZ is a blog that has publications related to freedom,
+        //         anarchism, thoughts and indignations.
+        //     `,
+        //     href: 'https://diariohz.com.br',
+        //     img: {
+        //         src: './assets/imgs/diario-hz.webp',
+        //         alt: 'Diário HZ\'s',
+        //     }
+        // },
         {
             title: 'FriendBot web page (FIAP)',
             desc: `
