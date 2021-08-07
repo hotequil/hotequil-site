@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @import "variables";
 
 %line-height-default{
@@ -16,9 +18,9 @@
 %shadow-img{
     $size: 24;
 
-    box-shadow: 0 0 #{$size / 2}px darken($white-color, ($size / 4) + 0%);
+    box-shadow: 0 0 #{math.div($size, 2)}px darken($white-color, math.div($size, 4) + 0%);
 
     &:hover, &:focus, &:active{
-        box-shadow: 0 0 #{$size}px darken($white-color, ($size / 2) + 0%);
+        box-shadow: 0 0 #{$size}px darken($white-color, math.div($size, 2) + 0%);
     }
 }

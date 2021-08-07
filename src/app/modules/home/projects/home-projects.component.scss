@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @import "../../../../stylesheets/variables";
 @import "../../../../stylesheets/mixins";
 @import "../../../../stylesheets/placeholders";
@@ -21,7 +23,7 @@
         letter-spacing: 1px;
         display: inline;
         color: $black-color;
-        margin: 0 0 ($margin / 2) 0;
+        margin: 0 0 math.div($margin, 2) 0;
 
         @include box-shadow-bottom(-0.175rem, $black-color);
     }

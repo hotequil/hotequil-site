@@ -1,5 +1,4 @@
-import { Component, Inject, OnInit, PLATFORM_ID, Renderer2 } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 
 import { fromEvent, Observable, of } from 'rxjs';
 
@@ -7,6 +6,7 @@ import { Link } from '../../shared/models/link/link';
 import { Img } from '../../shared/models/img/img';
 import { Btn } from '../../shared/models/btn/btn';
 import { Letters } from '../../shared/enums/letters.enum';
+import { AppService } from '../../app.service';
 
 @Component({
     selector: 'h-header',
@@ -15,7 +15,6 @@ import { Letters } from '../../shared/enums/letters.enum';
 })
 export class HeaderComponent implements OnInit{
     showBtns = false;
-    isBrowser = false;
     keyFtSz = 'ftSz';
     keyFilter = 'filter';
     greyVal = 'grayscale(1)';
@@ -82,12 +81,10 @@ export class HeaderComponent implements OnInit{
         }
     ];
 
-    constructor(@Inject(PLATFORM_ID) platformId: string, private renderer: Renderer2) {
-        this.isBrowser = isPlatformBrowser(platformId);
-    }
+    constructor(private renderer: Renderer2, private appService: AppService){}
 
     ngOnInit(): void{
-        if(this.isBrowser){
+        if(this.appService.isBrowser){
             this.showBtns = true;
             this.htmlEl = document.querySelector('html');
 
@@ -140,11 +137,11 @@ export class HeaderComponent implements OnInit{
     }
 
     private setFilter(filter: string): void{
-        if (this.isBrowser) this.renderer.setStyle(this.htmlEl, 'filter', filter);
+        if (this.appService.isBrowser) this.renderer.setStyle(this.htmlEl, 'filter', filter);
     }
 
     private setFtSz(val: number): void{
-        if (this.isBrowser && val) {
+        if (this.appService.isBrowser && val) {
             this.renderer.setStyle(this.htmlEl, 'font-size', `${val}px`);
         }
     }

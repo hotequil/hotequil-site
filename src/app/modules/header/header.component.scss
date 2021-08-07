@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @import "../../../stylesheets/mixins";
 @import "../../../stylesheets/variables";
 @import "../../../stylesheets/placeholders";
@@ -14,7 +16,7 @@
     }
 
     &__actions{
-        $space-btn: ($space-links / 2);
+        $space-btn: math.div($space-links, 2);
 
         flex-grow: 1;
         display: flex;

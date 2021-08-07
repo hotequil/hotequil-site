@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from './app.service';
 
 @Component({
     selector: 'h-app',
@@ -6,18 +7,21 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
+    constructor(private appService: AppService){}
+
     ngOnInit(): void{
-        console.log('Freedom.');
-        console.log(`
+        if(this.appService.isBrowser){
+            console.log(`
 
 
-                /     /      _______                        /
-               /     /         /                         o /
-              /-----/ /-----/ / /-----/ /-----/ /     / / /
-             /     / /     / / /  ___/ /     / /     / / /
-            /     / /-----/ / /_____/ /_____/ /_____/ / /
-                                           /
-                                          /
-        `);
+                    /     /      _______                        /
+                   /     /         /                         o /
+                  /-----/ /-----/ / /-----/ /-----/ /     / / /
+                 /     / /     / / /  ___/ /     / /     / / /
+                /     / /-----/ / /_____/ /_____/ /_____/ / /
+                                               /
+                                              /
+            `);
+        }
     }
 }
