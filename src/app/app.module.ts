@@ -16,11 +16,11 @@ import { HeaderModule } from './modules/header/header.module';
         AppRoutesModule,
         HomeModule,
         FooterModule,
-        HeaderModule,
+        HeaderModule
     ],
     providers: [],
     bootstrap: [
         AppComponent
     ]
 })
-export class AppModule {}
+export class AppModule{}

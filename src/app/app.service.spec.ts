@@ -16,4 +16,8 @@ describe(AppService.name, () => {
 
         expect(typeof(value) === 'boolean').toBeTrue();
     });
+
+    it('Should create the service when starting the app', () => {
+        expect(service).toBeTruthy();
+    });
 });
