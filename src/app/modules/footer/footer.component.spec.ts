@@ -1,25 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FooterComponent } from './footer.component';
+import { FooterModule } from './footer.module';
 
-describe('FooterComponent', () => {
-  let component: FooterComponent;
-  let fixture: ComponentFixture<FooterComponent>;
+describe(FooterComponent.name, () => {
+    let component: FooterComponent;
+    let fixture: ComponentFixture<FooterComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ FooterComponent ]
-    })
-    .compileComponents();
-  });
+    beforeEach(async () => {
+        await TestBed.configureTestingModule({ imports: [FooterModule] }).compileComponents();
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(FooterComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+        fixture = TestBed.createComponent(FooterComponent);
+        component = fixture.componentInstance;
+    });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('Should create the component when starting the app', () => {
+        expect(component).toBeTruthy();
+    });
 });
