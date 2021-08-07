@@ -47,8 +47,8 @@ export class HeaderComponent implements OnInit{
             target: '_blank'
         },
         {
-            text: 'LBRY',
-            href: 'https://lbry.tv/@hotequil',
+            text: 'Odysee',
+            href: 'https://odysee.com/@hotequil',
             target: '_blank'
         },
         {
