@@ -1,25 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomeMessageComponent } from './home-message.component';
+import { HomeModule } from '../home.module';
 
-describe('HomeHeadComponent', () => {
-  let component: HomeMessageComponent;
-  let fixture: ComponentFixture<HomeMessageComponent>;
+describe(HomeMessageComponent.name, () => {
+    let component: HomeMessageComponent;
+    let fixture: ComponentFixture<HomeMessageComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ HomeMessageComponent ]
-    })
-    .compileComponents();
-  });
+    beforeEach(async () => {
+        await TestBed.configureTestingModule({ imports: [HomeModule] }).compileComponents();
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(HomeMessageComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+        fixture = TestBed.createComponent(HomeMessageComponent);
+        component = fixture.componentInstance;
+    });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('Should create component when starting app', () => {
+        expect(component).toBeTruthy();
+    });
 });
