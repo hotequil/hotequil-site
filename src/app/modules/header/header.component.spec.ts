@@ -26,7 +26,7 @@ describe('HeaderComponent', () => {
 
             done();
         }, 1000);
-    })
+    });
 
     it('Should has HTML Element when onInit was called', () => {
         fixture.detectChanges();
