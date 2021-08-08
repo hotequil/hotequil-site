@@ -10,5 +10,5 @@ export class BtnComponent{
     @Input() ariaLabel = '';
     @Input() tooltip = '';
     @Input() active = false;
-    @Input() click = () => {};
+    @Input() click!: (args?: any[]) => any;
 }
