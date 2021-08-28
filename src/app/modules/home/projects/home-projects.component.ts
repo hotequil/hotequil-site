@@ -30,6 +30,26 @@ export class HomeProjectsComponent{
             }
         },
         {
+            title: 'Items application',
+            desc: `This project is for create items with Angular using LocalStorage, Material Design, responsive and reusable features application.`,
+            href: 'https://items-application.netlify.app',
+            img: {
+                src: './assets/imgs/items-application.webp',
+                alt: 'Items application\'s project',
+            }
+        },
+        {
+            title: 'FriendBot web page (FIAP)',
+            desc: `
+                This is a web page of a FIAP project called FriendBot.
+            `,
+            href: 'https://fiap-friendbot-web-page.netlify.app',
+            img: {
+                src: './assets/imgs/fiap-friendbot-web-page.webp',
+                alt: 'FriendBot\'s web page (FIAP)',
+            }
+        },
+        {
             title: 'Artifical Developers',
             desc: `
                 Artifical Developers is a simple project, it is
@@ -40,29 +60,6 @@ export class HomeProjectsComponent{
             img: {
                 src: './assets/imgs/artifical-developers.webp',
                 alt: 'Artifical Developers\'s',
-            }
-        },
-        // {
-        //     title: 'Diário HZ',
-        //     desc: `
-        //         Diário HZ is a blog that has publications related to freedom,
-        //         anarchism, thoughts and indignations.
-        //     `,
-        //     href: 'https://diariohz.com.br',
-        //     img: {
-        //         src: './assets/imgs/diario-hz.webp',
-        //         alt: 'Diário HZ\'s',
-        //     }
-        // },
-        {
-            title: 'FriendBot web page (FIAP)',
-            desc: `
-                This is a web page of a FIAP project called FriendBot.
-            `,
-            href: 'https://fiap-friendbot-web-page.netlify.app',
-            img: {
-                src: './assets/imgs/fiap-friendbot-web-page.webp',
-                alt: 'FriendBot\'s web page (FIAP)',
             }
         },
         {
