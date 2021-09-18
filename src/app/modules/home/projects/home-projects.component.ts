@@ -31,7 +31,10 @@ export class HomeProjectsComponent{
         },
         {
             title: 'Items application',
-            desc: `This project is for create items with Angular using LocalStorage, Material Design, responsive and reusable features application.`,
+            desc: `
+                This project is for create items with Angular using LocalStorage,
+                Material Design, responsive and reusable features application.
+            `,
             href: 'https://items-application.netlify.app',
             img: {
                 src: './assets/imgs/items-application.webp',
@@ -47,6 +50,17 @@ export class HomeProjectsComponent{
             img: {
                 src: './assets/imgs/fiap-friendbot-web-page.webp',
                 alt: 'FriendBot\'s web page (FIAP)',
+            }
+        },
+        {
+            title: 'Game for FriendBot project (FIAP)',
+            desc: `
+                The game is based on the king Arthur cartoon, contains progress, challenges, cutscenes, manual and much more.
+            `,
+            href: 'https://em-busca-da-coroa.netlify.app',
+            img: {
+                src: './assets/imgs/game-for-friend-bot-project.webp',
+                alt: 'FriendBot\'s game (FIAP)',
             }
         },
         {
