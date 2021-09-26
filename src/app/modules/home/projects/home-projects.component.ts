@@ -64,6 +64,15 @@ export class HomeProjectsComponent{
             }
         },
         {
+            title: 'Arduino irrigation system',
+            desc: `Irrigation system using Arduino for my vegetable garden.`,
+            href: 'https://github.com/hotequil/arduino-irrigation-system',
+            img: {
+                src: './assets/imgs/arduino-irrigation-system.webp',
+                alt: 'Arduino irrigation system\'s',
+            }
+        },
+        {
             title: 'Artifical Developers',
             desc: `
                 Artifical Developers is a simple project, it is
