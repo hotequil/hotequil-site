@@ -24,8 +24,6 @@
         display: inline;
         color: $black-color;
         margin: 0 0 math.div($margin, 2) 0;
-
-        @include box-shadow-bottom(-0.175rem, $black-color);
     }
 
     .projects__list{
@@ -69,7 +67,7 @@
 
                 .projects__title-item{
                     margin: 0 0 $small-margin 0;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: 1.375rem;
                     transform: skewX(-8deg);
 
