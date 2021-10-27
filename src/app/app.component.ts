@@ -8,21 +8,25 @@ import { AppService } from './app.service';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
+    private primaryColor = '#0091ea';
+    private whiteColor = '#fefefe';
+
     constructor(private appService: AppService){}
 
     ngOnInit(): void{
         if(this.appService.isBrowser){
-            console.log(`
-
-
-                    /     /      _______                        /
-                   /     /         /                         o /
-                  /-----/ /-----/ / /-----/ /-----/ /     / / /
-                 /     / /     / / /  ___/ /     / /     / / /
-                /     / /-----/ / /_____/ /_____/ /_____/ / /
-                                               /
-                                              /
-            `);
+console.log(`%c                                                         
+                                                         
+        /     /      _______                        /    
+       /     /         /                         o /     
+      /-----/ /-----/ / /-----/ /-----/ /     / / /      
+     /     / /     / / /  ___/ /     / /     / / /       
+    /     / /-----/ / /_____/ /_____/ /_____/ / /        
+                                   /                     
+                                  /                      
+                                                         
+                                                         `,
+`background-color: ${this.primaryColor}; color: ${this.whiteColor}`);
         }
     }
 }
