@@ -73,6 +73,15 @@ export class HomeProjectsComponent{
             }
         },
         {
+            title: 'Beers',
+            desc: `Beers is a simple CRUD with PHP.`,
+            href: 'https://github.com/hotequil/beers',
+            img: {
+                src: './assets/imgs/beers.webp',
+                alt: 'Bees\'',
+            }
+        },
+        {
             title: 'Artifical Developers',
             desc: `
                 Artifical Developers is a simple project, it is
