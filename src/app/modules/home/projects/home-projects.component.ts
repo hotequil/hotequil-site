@@ -78,7 +78,7 @@ export class HomeProjectsComponent{
             href: 'https://github.com/hotequil/beers',
             img: {
                 src: './assets/imgs/beers.webp',
-                alt: 'Bees\'',
+                alt: 'Beers\'',
             }
         },
         {
