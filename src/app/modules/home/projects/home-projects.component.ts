@@ -53,6 +53,15 @@ export class HomeProjectsComponent{
             }
         },
         {
+            title: 'FriendBot robot (FIAP)',
+            desc: `Merlin is a robot in FriendBot.`,
+            href: 'https://github.com/hotequil/fiap-friendbot-code',
+            img: {
+                src: './assets/imgs/merlin.webp',
+                alt: 'FriendBot\'s robot (FIAP)',
+            }
+        },
+        {
             title: 'Game for FriendBot project (FIAP)',
             desc: `
                 The game is based on the king Arthur cartoon, contains progress, challenges, cutscenes, manual and much more.
