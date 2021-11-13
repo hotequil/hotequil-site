@@ -55,7 +55,7 @@ export class HomeProjectsComponent{
         {
             title: 'FriendBot robot (FIAP)',
             desc: `Merlin is a robot in FriendBot.`,
-            href: 'https://github.com/hotequil/fiap-friendbot-code',
+            href: 'https://odysee.com/@hotequil:7/robo-merlin:4',
             img: {
                 src: './assets/imgs/merlin.webp',
                 alt: 'FriendBot\'s robot (FIAP)',
