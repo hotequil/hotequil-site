@@ -53,6 +53,15 @@ export class HomeProjectsComponent{
             }
         },
         {
+            title: 'FriendBot system (FIAP)',
+            desc: 'System for managing FriendBot publications.',
+            href: 'https://github.com/tech-warriors-corporation/friendbot-system',
+            img: {
+                src: './assets/imgs/friendbot-system.webp',
+                alt: 'FriendBot\'s system (FIAP)'
+            }
+        },
+        {
             title: 'FriendBot robot (FIAP)',
             desc: `Merlin is a robot in FriendBot.`,
             href: 'https://odysee.com/@hotequil:7/robo-merlin:4',
