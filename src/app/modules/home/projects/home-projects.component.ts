@@ -100,6 +100,15 @@ export class HomeProjectsComponent{
             }
         },
         {
+            title: 'Fullbranas',
+            desc: `Rodrigo Branas video series about VueJS, NodeJS and GraphQL resulted in this domain generation application.`,
+            href: 'https://github.com/fullbranas',
+            img: {
+                src: './assets/imgs/fullbranas.webp',
+                alt: 'Fullbranas\'',
+            }
+        },
+        {
             title: 'Artifical Developers',
             desc: `
                 Artifical Developers is a simple project, it is
