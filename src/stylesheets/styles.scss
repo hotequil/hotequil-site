@@ -22,7 +22,7 @@ html, body{
 body{
     $space: 2rem;
 
-    margin: 8rem auto 0 auto;
+    margin: $bigger-space auto 0 auto;
     padding: 0 $space;
     max-width: 1200px;
     overflow-x: hidden;
