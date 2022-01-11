@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @import "variables";
 @import "placeholders";
 
@@ -30,4 +32,24 @@
             color: $active-color;
         }
     }
+}
+
+@mixin default-section(){
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $bigger-space;
+
+    @media(max-width: $tablet-width){
+        margin-bottom: $medium-space;
+    }
+}
+
+@mixin default-title(){
+    font-size: 1.5rem;
+    width: fit-content;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline;
+    color: $black-color;
+    margin: 0 0 math.div($half-space, 2) 0;
 }

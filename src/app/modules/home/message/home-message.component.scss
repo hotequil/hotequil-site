@@ -22,7 +22,7 @@
         }
 
         @media(max-width: $tablet-width){
-            margin: 6rem 0;
+            margin: $medium-space 0;
         }
 
         .message__word{
