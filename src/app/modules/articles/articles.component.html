@@ -1,0 +1,8 @@
+<section class="articles">
+    <h3 class="articles__title">Articles</h3>
+    <ul class="articles__list">
+        <li class="articles__item" *ngFor="let article of list">
+            <h-articles-item [article]="article"></h-articles-item>
+        </li>
+    </ul>
+</section>
