@@ -1,3 +1,6 @@
 <a class="item" [href]="article.link" rel="noreferrer" target="_blank">
-    {{ article.name }}
+    <span class="item__content">
+        <span class="item__text">{{ article.name }}</span>
+        <span class="item__date">{{ article.date | date:'MMM, y' }}</span>
+    </span>
 </a>

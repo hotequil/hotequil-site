@@ -13,6 +13,7 @@ $border: 1px solid $primary-color;
 $active-color: darken($primary-color, 8%);
 $opaque-color: rgba(var(--primary-color-rgb), .12);
 $space: 1rem;
+$smaller-space: $space / 2;
 $bigger-space: 8rem;
 $medium-space: 6rem;
 $half-space: 4rem;
