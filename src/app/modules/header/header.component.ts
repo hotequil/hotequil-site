@@ -55,6 +55,11 @@ export class HeaderComponent implements OnInit{
             href: 'https://twitter.com/joaohotequil',
             target: '_blank',
         },
+        {
+            text: 'Spotify',
+            href: 'https://open.spotify.com/user/223smjnqot4aah4gp5tgpspqi',
+            target: '_blank',
+        },
     ];
 
     btns: Btn[] = [
