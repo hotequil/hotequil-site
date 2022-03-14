@@ -26,14 +26,14 @@ export class HeaderComponent implements OnInit{
 
     links: Link[] = [
         {
-            text: 'Curriculum',
-            href: './assets/docs/curriculum.pdf',
-            target: '_blank'
-        },
-        {
             text: 'Email',
             href: 'mailto:hotequil@protonmail.com',
             target: '_self',
+        },
+        {
+            text: 'Curriculum',
+            href: './assets/docs/curriculum.pdf',
+            target: '_blank'
         },
         {
             text: 'LinkedIn',
