@@ -92,7 +92,7 @@ export class HomeProjectsComponent{
         },
         {
             title: 'Costgements',
-            desc: `Costgements is a repository to create projects`,
+            desc: `Costgements is a repository to create projects with ReactJS`,
             href: 'https://github.com/hotequil/costgements',
             img: {
                 src: './assets/imgs/costgements.webp',
