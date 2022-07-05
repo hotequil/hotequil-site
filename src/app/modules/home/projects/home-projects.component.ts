@@ -91,6 +91,15 @@ export class HomeProjectsComponent{
             }
         },
         {
+            title: 'Costgements',
+            desc: `Costgements is a repository to create projects`,
+            href: 'https://github.com/hotequil/costgements',
+            img: {
+                src: './assets/imgs/costgements.webp',
+                alt: 'Costgements\'',
+            }
+        },
+        {
             title: 'Beers',
             desc: `Beers is a simple CRUD with PHP.`,
             href: 'https://github.com/hotequil/beers',
