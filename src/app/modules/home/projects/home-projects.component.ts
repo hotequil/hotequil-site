@@ -91,8 +91,17 @@ export class HomeProjectsComponent{
             }
         },
         {
+            title: 'Dodone',
+            desc: `Dodone is a to do list created with React, TypeScript and LocalStorage.`,
+            href: 'https://dodone-tasks.netlify.app',
+            img: {
+                src: './assets/imgs/dodone.webp',
+                alt: 'Dodone\'s',
+            }
+        },
+        {
             title: 'Costgements',
-            desc: `Costgements is a repository to create projects using ReactJS`,
+            desc: `Costgements is a repository to create projects using ReactJS.`,
             href: 'https://github.com/hotequil/costgements',
             img: {
                 src: './assets/imgs/costgements.webp',
