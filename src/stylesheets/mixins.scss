@@ -53,3 +53,12 @@
     color: $black-color;
     margin: 0 0 math.div($half-space, 2) 0;
 }
+
+@mixin ellipsis($lines: 1){
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    word-break: break-word;
+    -webkit-line-clamp: $lines;
+}
