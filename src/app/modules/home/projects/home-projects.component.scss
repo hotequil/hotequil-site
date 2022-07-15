@@ -55,12 +55,14 @@
             .projects__container{
                 display: flex;
                 flex-direction: column;
+                flex-grow: 1;
 
                 .projects__title-item{
                     margin: 0 0 $small-margin 0;
                     font-weight: 500;
                     font-size: 1.375rem;
                     transform: skewX(-8deg);
+                    word-break: break-all !important;
 
                     @include ellipsis(1);
                     @extend %line-height-default;
@@ -72,6 +74,7 @@
                     width: fit-content;
                     color: $primary-color;
                     font-size: 1rem;
+                    word-break: break-all !important;
 
                     @include ellipsis(1);
                     @include link();
@@ -81,6 +84,8 @@
                     color: $grey-color;
                     margin: 0 0 $small-margin 0;
                     font-size: .9rem;
+                    flex-grow: 1;
+                    word-break: break-all !important;
 
                     @include ellipsis(2);
                     @extend %line-height-default;
