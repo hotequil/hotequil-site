@@ -49,14 +49,10 @@ body{
 }
 
 *{
-    @extend %no-selection;
-
-    $selection-color: lighten($primary-color, 12%);
-
     &::selection{
         color: $white-color;
-        background-color: $selection-color;
+        background-color: $primary-color;
     }
 
-    outline-color: $selection-color;
+    outline-color: $primary-color;
 }
