@@ -48,6 +48,10 @@ body{
     }
 }
 
+*{
+    outline: none;
+}
+
 ::-moz-selection{
     color: $white-color;
     background-color: $primary-color;
