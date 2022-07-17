@@ -49,10 +49,15 @@ body{
 }
 
 *{
-    &::selection{
-        color: $white-color;
-        background-color: $primary-color;
-    }
-
     outline-color: $primary-color;
+}
+
+::-moz-selection{
+    color: $white-color;
+    background-color: $primary-color;
+}
+
+::selection{
+    color: $white-color;
+    background-color: $primary-color;
 }
