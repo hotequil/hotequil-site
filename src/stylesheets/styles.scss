@@ -52,12 +52,12 @@ body{
     outline: none;
 }
 
-::-moz-selection{
+*::-moz-selection{
     color: $white-color;
     background-color: $primary-color;
 }
 
-::selection{
+*::selection{
     color: $white-color;
     background-color: $primary-color;
 }
