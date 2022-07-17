@@ -19,6 +19,18 @@ html, body{
     }
 }
 
+:root, html, body{
+    ::-moz-selection{
+        color: $white-color;
+        background-color: $primary-color;
+    }
+
+    ::selection{
+        color: $white-color;
+        background-color: $primary-color;
+    }
+}
+
 body{
     $space: 2rem;
 
@@ -50,9 +62,4 @@ body{
 
 *{
     outline-color: $primary-color;
-
-    &::-moz-selection, &::selection{
-        color: $white-color;
-        background-color: $primary-color;
-    }
 }
