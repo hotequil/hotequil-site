@@ -49,15 +49,15 @@ body{
 }
 
 *{
-    outline: none;
+    outline-color: $primary-color;
 }
 
-*::-moz-selection{
+::-moz-selection{
     color: $white-color;
     background-color: $primary-color;
 }
 
-*::selection{
+::selection{
     color: $white-color;
     background-color: $primary-color;
 }
