@@ -91,6 +91,15 @@ export class HomeProjectsComponent{
             }
         },
         {
+            title: 'Photos gallery',
+            desc: `Photos gallery consumes an API and has dark and light theme, made with React, TypeScript, SCSS, Vite and Netlify.`,
+            href: 'https://photos-gallery-hotequil.netlify.app',
+            img: {
+                src: './assets/imgs/photos-gallery.webp',
+                alt: 'Photos gallery',
+            }
+        },
+        {
             title: 'Dodone',
             desc: `Dodone is a to do list created with React, TypeScript and LocalStorage.`,
             href: 'https://dodone-tasks.netlify.app',
