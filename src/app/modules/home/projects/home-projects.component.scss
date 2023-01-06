@@ -85,6 +85,7 @@
                     margin: 0 0 $small-margin 0;
                     font-size: .9rem;
                     flex-grow: 1;
+                    line-height: 1.15;
 
                     @include ellipsis(2);
                     @extend %line-height-default;

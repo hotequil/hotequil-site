@@ -10,6 +10,15 @@ import { HomeProjects } from './home-projects';
 export class HomeProjectsComponent{
     projects: HomeProjects[] = [
         {
+            title: 'Casulo Social',
+            desc: 'Stock management system for Casulo Social (NGO) made with Flask (Python), Oracle DB, Angular, Netlify and Railway.',
+            href: 'https://sistema-de-estoque-projeto-casulo.netlify.app',
+            img: {
+                src: './assets/imgs/casulo-social.webp',
+                alt: 'Casulo Social\'s'
+            }
+        },
+        {
             title: 'Lenóra Vitorino',
             desc: `
                 Lenóra Vitorino is a website made with Angular.

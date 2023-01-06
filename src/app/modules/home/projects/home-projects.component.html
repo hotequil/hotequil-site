@@ -9,7 +9,7 @@
             </div>
             <article class="projects__container">
                 <h4 class="projects__title-item">{{ project.title }}</h4>
-                <p class="projects__desc">{{ project.desc }}</p>
+                <p class="projects__desc" [title]="project.desc">{{ project.desc }}</p>
                 <a rel="noreferrer"
                    class="projects__link"
                    [href]="project.href"
