@@ -17,7 +17,7 @@ export class ArticlesComponent {
         {
             name: "Respeite seu trabalho, compre ouro",
             link: "https://cypherpunks.com.br/documentos/respeite-seu-trabalho-compre-ouro",
-            date: new Date(2022, 1, 5)
+            date: new Date(2023, 1, 5)
         },
     ];
 }
