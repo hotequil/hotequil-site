@@ -13,6 +13,11 @@ export class ArticlesComponent {
             name: "Improve your application performance in Angular (3 tips)",
             link: "./assets/articles/angular-improve-performance.pdf",
             date: new Date(2022, 0, 10)
-        }
+        },
+        {
+            name: "Respeite seu trabalho, compre ouro",
+            link: "https://cypherpunks.com.br/documentos/respeite-seu-trabalho-compre-ouro",
+            date: new Date(2022, 1, 5)
+        },
     ];
 }
