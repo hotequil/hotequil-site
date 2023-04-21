@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit{
     keyFilter = 'filter';
     greyVal = 'grayscale(1)';
     htmlEl: HTMLElement|null = null;
-    logoImgObservable: Observable<string> = of("./assets/imgs/hotequil.jpeg");
+    logoImgObservable: Observable<string> = of("./assets/imgs/hotequil.webp");
     showLogoImg = false;
     name = 'João Paulo Hotequil';
     img: Img = { src: './assets/imgs/logo.svg', alt: 'João Paulo Hotequil\'s img' };
