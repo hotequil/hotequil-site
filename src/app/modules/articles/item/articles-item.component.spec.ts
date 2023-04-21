@@ -14,7 +14,8 @@ describe('ArticlesItemComponent', () => {
 
         component.article = {
             name: "Improve your application performance in Angular (3 tips)",
-            link: "./assets/articles/angular-improve-performance.pdf"
+            link: "./assets/articles/angular-improve-performance.pdf",
+            date: new Date()
         };
 
         fixture.detectChanges();
