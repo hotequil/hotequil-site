@@ -11,6 +11,6 @@
         [headers.values]
             Cache-Control = "max-age=31536000"
             X-Content-Type-Options = "DENY"
-            Content-Security-Policy = "default-src 'self' *.cloudfront.net; style-src 'unsafe-inline'; style-src-elem *.cloudfront.net; font-src fonts.gstatic.com"
+            Content-Security-Policy = "default-src 'self' *.cloudfront.net; style-src 'unsafe-inline'; style-src-elem 'unsafe-inline' *.cloudfront.net; font-src fonts.gstatic.com"
             X-Frame-Options = "SAMEORIGIN"
             X-XSS-Protection = "1; mode=block"
