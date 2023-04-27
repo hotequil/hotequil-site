@@ -11,6 +11,6 @@
         [headers.values]
             Cache-Control = "max-age=31536000"
             X-Content-Type-Options = "DENY"
-            Content-Security-Policy = "default-src 'self' cloudfront.net *.cloudfront.net; style-src 'self'"
+            Content-Security-Policy = "default-src 'self' cloudfront.net *.cloudfront.net; style-src 'unsafe-inline'"
             X-Frame-Options = "SAMEORIGIN"
             X-XSS-Protection = "1; mode=block"
