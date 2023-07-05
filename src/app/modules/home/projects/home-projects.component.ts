@@ -10,6 +10,15 @@ import { HomeProjects } from './home-projects';
 export class HomeProjectsComponent{
     projects: HomeProjects[] = [
         {
+            title: 'Mechanize',
+            desc: 'Mechanize is an app to connect drivers with mechanics.',
+            href: 'https://play.google.com/store/apps/details?id=com.mechanize',
+            img: {
+                src: './assets/imgs/mechanize.webp',
+                alt: 'Mechanize\'s'
+            }
+        },
+        {
             title: 'Casulo Social',
             desc: 'Stock management system for Casulo Social (NGO) made with Flask (Python), Oracle DB, Angular, Netlify and Railway.',
             href: 'https://sistema-de-estoque-projeto-casulo.netlify.app',
