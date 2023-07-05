@@ -11,7 +11,7 @@ export class HomeProjectsComponent{
     projects: HomeProjects[] = [
         {
             title: 'Mechanize',
-            desc: 'Mechanize is an app to connect drivers with mechanics.',
+            desc: 'Mechanize is an app to connect drivers with mechanics made in Kotlin.',
             href: 'https://play.google.com/store/apps/details?id=com.mechanize',
             img: {
                 src: './assets/imgs/mechanize.webp',
