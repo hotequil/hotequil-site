@@ -51,11 +51,6 @@ export class HeaderComponent implements OnInit{
             target: '_blank'
         },
         {
-            text: 'Twitter',
-            href: 'https://twitter.com/joaohotequil',
-            target: '_blank',
-        },
-        {
             text: 'Spotify',
             href: 'https://open.spotify.com/user/223smjnqot4aah4gp5tgpspqi',
             target: '_blank',
@@ -79,7 +74,7 @@ export class HeaderComponent implements OnInit{
         },
         {
             txt: 'High contrast',
-            ariaLabel: 'Alto contraste',
+            ariaLabel: 'High contrast',
             tooltip: 'Ctrl + Alt + C',
             click: () => this.toggleFilter(),
             active: () => this.greyVal === this.getFilterOnLocalStorage
