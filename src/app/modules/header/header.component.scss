@@ -156,15 +156,24 @@
         background-color: $primary-color;
         text-decoration: none;
         color: $white-color;
-        transition: opacity $time-transition, transform $time-transition;
+        transition: opacity $time-transition, transform $time-transition, box-shadow $time-transition;
         box-sizing: border-box;
+        outline: none;
+        z-index: 4;
+        white-space: nowrap;
+        box-shadow: none;
 
         &:focus{
+            box-shadow: 0 0 $space-container 0 lighten($black-color, 32%);
             transform: $default-transform;
         }
 
-        &:hover, &:active{
+        &:hover{
             opacity: .8;
+        }
+
+        &:active{
+            opacity: .6;
         }
     }
 }
