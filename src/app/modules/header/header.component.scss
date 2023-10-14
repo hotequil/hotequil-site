@@ -137,4 +137,34 @@
             }
         }
     }
+
+    & &__skip-to-content{
+        $size: 42px;
+        $default-transform: translateX(-50%);
+
+        text-align: center;
+        border-radius: 0 0 $radius $radius;
+        position: fixed;
+        top: 0;
+        height: $size;
+        left: 50%;
+        transform: $default-transform translateY($size * -1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 $double-space;
+        background-color: $primary-color;
+        text-decoration: none;
+        color: $white-color;
+        transition: opacity $time-transition, transform $time-transition;
+        box-sizing: border-box;
+
+        &:focus{
+            transform: $default-transform;
+        }
+
+        &:hover, &:active{
+            opacity: .8;
+        }
+    }
 }
