@@ -60,21 +60,21 @@ export class HeaderComponent implements OnInit{
     btns: Btn[] = [
         {
             txt: 'A+',
-            ariaLabel: 'Increase font size',
+            ariaLabel: 'Increase font size (A+): Ctrl + Alt + B',
             tooltip: 'Ctrl + Alt + B',
             click: () => this.fontBigger(),
             active: () => false
         },
         {
             txt: 'A-',
-            ariaLabel: 'Decrease font size',
+            ariaLabel: 'Decrease font size (A-): Ctrl + Alt + S',
             tooltip: 'Ctrl + Alt + S',
             click: () => this.fontSmaller(),
             active: () => false
         },
         {
             txt: 'High contrast',
-            ariaLabel: 'High contrast',
+            ariaLabel: 'High contrast: Ctrl + Alt + C',
             tooltip: 'Ctrl + Alt + C',
             click: () => this.toggleFilter(),
             active: () => this.greyVal === this.getFilterOnLocalStorage
