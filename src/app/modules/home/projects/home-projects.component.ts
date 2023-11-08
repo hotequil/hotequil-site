@@ -10,6 +10,15 @@ import { HomeProjects } from './home-projects';
 export class HomeProjectsComponent{
     projects: HomeProjects[] = [
         {
+            title: 'Web Accessibility',
+            desc: 'Web Accessibility standard examples of elements.',
+            href: 'https://web-accessibility-hotequil.netlify.app',
+            img: {
+                src: './assets/imgs/web-accessibility.webp',
+                alt: 'Web Accessibility\'s'
+            }
+        },
+        {
             title: 'Mechanize',
             desc: 'Mechanize is an app to connect drivers with mechanics made in Kotlin.',
             href: 'https://play.google.com/store/apps/details?id=com.mechanize',
