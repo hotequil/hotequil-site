@@ -8,7 +8,7 @@ import { AppService } from './app.service';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
-    private primaryColor = '#0091ea';
+    private primaryColor = '#0078c2';
     private whiteColor = '#fefefe';
 
     constructor(private appService: AppService){}
