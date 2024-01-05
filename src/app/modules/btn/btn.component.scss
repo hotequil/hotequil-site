@@ -57,4 +57,9 @@
             transform: translateX(-50%);
         }
     }
+
+    @media(max-width: $tablet-width){
+        padding: 0.375rem 0.65rem;
+        font-size: .95rem;
+    }
 }

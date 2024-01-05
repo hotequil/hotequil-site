@@ -75,6 +75,10 @@
                         font-size: .85rem;
 
                         @include link();
+
+                        @media(max-width: $tablet-width){
+                            font-size: .925rem;
+                        }
                     }
                 }
             }
