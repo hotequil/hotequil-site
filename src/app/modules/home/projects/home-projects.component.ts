@@ -37,17 +37,6 @@ export class HomeProjectsComponent{
             }
         },
         {
-            title: 'Lenóra Vitorino',
-            desc: `
-                Lenóra Vitorino is a website made with Angular.
-            `,
-            href: 'https://lenora-vitorino.com',
-            img: {
-                src: './assets/imgs/lenora-vitorino.webp',
-                alt: 'Lenóra Vitorino\'s',
-            }
-        },
-        {
             title: 'Angular with Service Worker and Web Notification',
             desc: `This is a project to create notifications using Angular, Service Worker and Web Notification.`,
             href: 'https://angular-sw-web-notification.netlify.app',
