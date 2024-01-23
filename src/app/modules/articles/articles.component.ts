@@ -19,5 +19,10 @@ export class ArticlesComponent {
             link: "https://cypherpunks.com.br/documentos/respeite-seu-trabalho-compre-ouro",
             date: new Date(2023, 1, 5)
         },
+        {
+            name: "Without security there is no economy (pt-BR)",
+            link: "https://cypherpunks.com.br/documentos/sem-seguranca-nao-ha-economia",
+            date: new Date(2024, 0, 2)
+        },
     ];
 }
