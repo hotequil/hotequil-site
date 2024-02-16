@@ -11,7 +11,7 @@ export class ArticlesComponent {
     list: Article[] = [
         {
             name: "Talk about Web Accessibility with Camila Bueno for Performa_IT (pt-BR)",
-            link: "./assets/articles/talk-about-web-accessibility-with-camila-bueno.pdf",
+            link: "./assets/articles/talk-about-web-accessibility-with-camila-bueno-for-performa-it.pdf",
             date: new Date(2024, 1, 16)
         },
         {
