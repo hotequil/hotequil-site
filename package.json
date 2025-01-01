@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "npm i --legacy-peer-deps && npm run prerender",
+    "build": "npm i && npm run prerender",
     "coverage": "ng lint && rm -rf coverage && ng test --no-watch --sourceMap=true --code-coverage --browsers CliBrowser && http-server -c-1 -o coverage/hotequil/index.html",
     "test": "ng test --sourceMap=true --code-coverage",
     "e2e": "ng e2e",
