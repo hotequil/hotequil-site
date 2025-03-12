@@ -3,16 +3,12 @@ import { EB_Garamond } from 'next/font/google'
 import { ReactNode } from 'react'
 
 import './globals.css'
+import { description, title } from '@/app/constants'
 
 const ebGaramondSerif = EB_Garamond({
   variable: '--font-eb-garamond-serif',
   subsets: ['latin'],
 })
-
-export const title = 'João Paulo Hotequil'
-
-export const description =
-  'Working in the Information Technology field since 2017, starting with hardware and transitioning to software in 2019. Maintains a consistent study routine, enhancing both soft and hard skills through courses, certifications, projects, books, and lectures. Demonstrates belief in the potential of technology as a tool for decentralization and for providing solutions to customers and companies. Exhibits curiosity, consistency, and focus, exploring various areas to address problems effectively. Prioritizes accessibility, responsiveness, performance, semantics, SEO, usability, testing, YAGNI, KISS, security, and adherence to quality and design standards. Collaborates with teams to create solutions that improve process times, reduce operational costs, facilitate and increase purchases, integrate systems, enable broader device compatibility for applications, document projects and workflows, and conduct application testing.'
 
 const fullImagePath = 'https://hotequil.tech/images/hotequil.png'
 

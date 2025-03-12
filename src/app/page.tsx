@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { description, title } from '@/app/layout'
+import { description, title } from '@/app/constants'
 
 export default function App() {
   return (
