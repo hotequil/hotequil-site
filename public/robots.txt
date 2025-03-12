@@ -1,3 +1,0 @@
-# All engines
-User-agent: *
-Allow: /

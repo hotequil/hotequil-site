@@ -1,16 +1,16 @@
 [build]
   command = "npm run build"
   functions = "./functions"
-  publish = "dist/hotequil/browser"
+  publish = ".next"
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 301
 [[headers]]
-    for = "/*"
-        [headers.values]
-            Cache-Control = "max-age=31536000"
-            X-Content-Type-Options = "DENY"
-            Content-Security-Policy = "default-src 'self' 'unsafe-inline' *.cloudfront.net; style-src 'unsafe-inline'; style-src-elem 'unsafe-inline' *.cloudfront.net hotequil.tech; font-src fonts.gstatic.com"
-            X-Frame-Options = "SAMEORIGIN"
-            X-XSS-Protection = "1; mode=block"
+  for = "/*"
+    [headers.values]
+      Cache-Control = "max-age=31536000"
+      X-Content-Type-Options = "DENY"
+      Content-Security-Policy = "default-src 'self' 'unsafe-inline' *.cloudfront.net; style-src 'unsafe-inline'; style-src-elem 'unsafe-inline' *.cloudfront.net hotequil.tech; font-src fonts.gstatic.com"
+      X-Frame-Options = "SAMEORIGIN"
+      X-XSS-Protection = "1; mode=block"
