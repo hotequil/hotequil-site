@@ -10,7 +10,8 @@ const ebGaramondSerif = EB_Garamond({
   subsets: ['latin'],
 })
 
-const fullImagePath = 'https://hotequil.tech/images/hotequil.png'
+const url = 'https://hotequil.tech'
+const fullImageUrl = `${url}/images/hotequil.png`
 
 export const metadata: Metadata = {
   title,
@@ -64,9 +65,9 @@ export const metadata: Metadata = {
     description,
     locale: 'en_US',
     type: 'website',
-    images: fullImagePath,
+    images: fullImageUrl,
     siteName: title,
-    url: 'https://hotequil.tech',
+    url,
   },
   robots: {
     index: true,
@@ -80,7 +81,7 @@ export const metadata: Metadata = {
     title,
     description,
     card: 'summary_large_image',
-    images: [fullImagePath],
+    images: fullImageUrl,
   },
   icons: [
     {
@@ -104,7 +105,7 @@ export default function RootLayout({
   return (
     <html lang="en-US">
       <body
-        className={`${ebGaramondSerif.variable} antialiased font-[family-name:var(--font-eb-garamond-serif)]`}
+        className={`${ebGaramondSerif.variable} antialiased font-(family-name:--font-eb-garamond-serif)`}
       >
         {children}
       </body>

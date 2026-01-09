@@ -1,6 +1,6 @@
-import Link from 'next/link'
 import Image from 'next/image'
 import { description, title } from '@/app/constants'
+import { Anchor } from '@/app/components/Anchor'
 
 export default function App() {
   return (
@@ -11,7 +11,7 @@ export default function App() {
         width={512}
         height={512}
         priority
-        className="w-[156px] h-[156px] select-none pointer-events-none"
+        className="w-38 h-38 select-none pointer-events-none"
       />
 
       <div className="flex flex-col gap-y-4 sm:gap-y-6">
@@ -21,54 +21,19 @@ export default function App() {
 
         <ul className="flex flex-wrap gap-2 text-sm sm:text-base leading-4">
           <li>
-            <Link
-              href="mailto:hotequil@protonmail.com"
-              target="_blank"
-              prefetch={true}
-              className="underline text-grey hover:text-blue focus:text-blue"
-            >
-              Email
-            </Link>
+            <Anchor href="mailto:hotequil@protonmail.com">Email</Anchor>
           </li>
           <li>
-            <Link
-              href="/docs/curriculum.pdf"
-              target="_blank"
-              prefetch={true}
-              className="underline text-grey hover:text-blue focus:text-blue"
-            >
-              Curriculum
-            </Link>
+            <Anchor href="/docs/curriculum.pdf">Curriculum</Anchor>
           </li>
           <li>
-            <Link
-              href="https://www.linkedin.com/in/joao-paulo-hotequil"
-              target="_blank"
-              prefetch={true}
-              className="underline text-grey hover:text-blue focus:text-blue"
-            >
-              LinkedIn
-            </Link>
+            <Anchor href="https://www.linkedin.com/in/joao-paulo-hotequil">LinkedIn</Anchor>
           </li>
           <li>
-            <Link
-              href="https://github.com/hotequil"
-              target="_blank"
-              prefetch={true}
-              className="underline text-grey hover:text-blue focus:text-blue"
-            >
-              GitHub
-            </Link>
+            <Anchor href="https://github.com/hotequil">GitHub</Anchor>
           </li>
           <li>
-            <Link
-              href="https://odysee.com/@hotequil"
-              target="_blank"
-              prefetch={true}
-              className="underline text-grey hover:text-blue focus:text-blue"
-            >
-              Odysee
-            </Link>
+            <Anchor href="https://odysee.com/@hotequil">Odysee</Anchor>
           </li>
         </ul>
       </div>
