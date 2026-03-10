@@ -17,7 +17,7 @@ export default function App() {
       <div className="flex flex-col gap-y-4 sm:gap-y-6">
         <h1 className="text-3xl sm:text-4xl font-bold">{title}</h1>
 
-        <p className="leading-4 text-justify text-sm sm:text-base">{description}</p>
+        <p className="sm:leading-5 leading-4 text-justify text-sm sm:text-base">{description}</p>
 
         <ul className="flex flex-wrap gap-2 text-sm sm:text-base leading-4">
           <li>

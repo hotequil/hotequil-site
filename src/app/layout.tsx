@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     'semantics',
     'seo',
     'usability',
-    'testing',
+    'tdd',
     'yagni',
     'kiss',
     'security',
